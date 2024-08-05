@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
+
+* {
+    /* reset do CSS */
+    font-family: "Righteous", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Fonte alternativa para textos menores, deixar p dps */
+
+/* font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+  /* Navbar */
+
+  .navbar {
+    position: fixed;
+    height: 4rem;
+    padding-top: 1rem;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(169,30,219,1) 0%, rgba(255,25,196,1) 100%);
+    z-index: 1000;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    display: inline;
+    color: white;
+}
+
+.navbar nav ul a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar nav ul a li:hover {
+    background-color: #ffffff23;
+    padding: 1.25rem;
+}
+
+.navbar nav ul li img {
+    height: 2rem; /* dps nós arruma sabosta KKKKKKKKKKK*/
+    width: auto;
+}
+
+.landing {
+    background-image: url(/img/background.jpg);
+    filter: grayscale(100%);
+    margin-top: 4rem;
+    padding: 12rem;
+}
+
+.landing h1{
+    display: flex;
+    font-size: 9.375rem;
+
+    align-text: center;
+}
