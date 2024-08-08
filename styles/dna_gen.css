@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+:root{
+    --purplebg: #281448;
+    --textyellow: #FCB850;
+    --imgcardpurple: #1C0E34;
+    --rosio: #D6008F;
+    --solidbgcolor: #EAE8ED;
+    --solidtypecolor: #F6EAF9;
+}
+
+html a {
+    text-decoration: none;
+}
+
+/* Fonte alternativa para textos menores, deixar p dps se quisermos usar*/
+
+/* font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+* {
+    /* reset do CSS */
+    font-family: "Righteous", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    height: 4rem;
+    padding-top: 1rem;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(169,30,219,1) 0%, rgba(255,25,196,1) 100%);
+    z-index: 1000;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    display: inline-block;
+    color: white;
+}
+
+.navbar nav ul a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar nav ul a li:hover {
+    text-decoration: underline;
+}
+
+.navbar nav ul li img {
+    height: 2rem; /* dps nós arruma sabosta KKKKKKKKKKK*/
+    width: auto;
+}
+
+.bosta763{
+    background-color: var(--solidbgcolor);
+    margin-top: 4rem;
+}
+
+.degrade{
+    background-image: url(/img/bggen.png);
+    background-repeat: repeat-x;
+}
+
+.title{
+    font-size: 4rem;
+    margin-bottom: 14rem;
+}
+
+.title h1{
+    color: #fff;
+    filter: drop-shadow(0px 20px 10px #00000086);
+    text-align: center;
+
+}
+
+.title h1 span{
+    color: var(--rosio);
+    text-align: center;
+}
+
+.infocard{
+    display: flex;
+    columns: 2;
+    justify-content: center;
+}
+
+.infocard div{
+    border-radius: 1rem;
+}
+
+.info{
+    background-color: var(--textyellow);
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    margin-right: -2rem;
+
+    z-index: 2;
+}
+
+.info h3, li{
+    color: #fff;
+}
+
+.info h3{
+    font-size: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.info li{
+    display: block;
+
+    padding-bottom: 1.25rem;
+    padding-inline: 0.75rem;
+
+    font-size: 1rem;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.infocard img{
+    margin-left: -1rem;
+    margin-top: 4rem;
+}
+
+.area_tipos{
+    background-color: var(--purplebg);
+    padding-bottom: 6rem;
+}
+
+.area_tipos h4{
+    font-size: 2.5rem;
+
+    color: var(--rosio);
+
+    padding-top: 2rem;
+    padding-inline: 3rem;
+}
+
+.area_tipos strong p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+    color: #fff;
+
+    padding-inline: 3.125rem;
+    padding-bottom: 4rem;
+}
+
+.tipos{
+    display: flex;
+    columns: 2;
+    gap: 6rem;
+
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.tipos div{
+    background-color: var(--solidtypecolor);
+
+    height: 9rem;
+    width: 9rem;
+
+    border-radius: 1.25rem;
+}
+
+.tipos div p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    color: var(--rosio);
+
+    text-align: center;
+    
+    padding-block: 3rem;
+}
+
+.cells{
+    background-color: var(--purplebg);
+}
+
+.cells h4{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-inline: 3.125rem;
+}
+
+.cells .haploide div{
+    display: block;
+    margin-inline: 4rem;
+    background-color: var(--textyellow);
+
+    
+}
+
+.cells .haploide p{
+    color: #fff;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.cells img{
+    border-radius: 20px;
+}
