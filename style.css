@@ -70,20 +70,30 @@ html a {
     background-image: url(/img/background.png);
     background-color: var(--solidbgcolor);
     margin-top: 4rem;
-    padding: 11rem;
+    padding: 11rem 0;
+    text-align: center;
 }
 
 .landing h1{
     font-size: 9.375rem;
     text-align: center;
     color: var(--textyellow);
-    filter: drop-shadow(0px 20px 10px #00000086);
+    filter: drop-shadow(0px 20px 10px #00000099);
+    font-weight: 400;
+    height: 12.375rem;
+    left: 17.188rem;
+    top: 12.188rem;
 }
+
 
 .landing h2{
     font-size: 2.813rem;
     color: var(--rosio);
     text-align: center;
+    line-height: normal;
+    width: 48.75rem;
+    font-weight: 400;
+    margin: 0 auto;
 }
 
 .cursos {
