@@ -7,6 +7,7 @@
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
+    --textcolor: #646464;
 }
 
 html a {
@@ -26,6 +27,7 @@ html a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-repeat: repeat-x;
   }
 
 /* Navbar */
@@ -48,7 +50,7 @@ html a {
 }
 
 .navbar nav ul li {
-    display: inline-block;
+    display: block;
     color: white;
 }
 
@@ -110,7 +112,7 @@ html a {
     width: fit-content;
     height: fit-content;
     padding: 1rem;
-    margin-right: -2rem;
+    padding-right: -2rem;
 
     z-index: 2;
 }
@@ -141,6 +143,8 @@ html a {
     margin-left: -1rem;
     margin-top: 4rem;
 }
+
+/* -------------------------------------------------------------- */
 
 .area_tipos{
     background-color: var(--purplebg);
@@ -269,7 +273,6 @@ span{
 }
 
 .cells .diploide div{
-    display: flex;
     margin-left: 30rem;
     margin-top: -1.25rem;
 }
@@ -280,14 +283,49 @@ span{
 
 .aplicacoes{
     padding: 3rem;
+    background-color: var(--solidbgcolor);
 }
 
 .aplicacoes h3{
     color: var(--rosio);
-    font-size: 1.875rem;
+    font-size: 2.813rem;
     padding-block: 4rem;
+
 }
 
 /* reutilizavel tb isso abaixo */
 
-.primeira-parte{}
+.primeira-parte{
+    display: flex;
+}
+
+.segunda-parte{
+    display: flex;
+}
+
+.primeira-parte p, .segunda-parte p{
+    color: var(--textcolor);
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    padding: 2rem;
+    padding-block: 6rem;
+}
+
+.segunda-parte p{
+    text-align: right;
+}
+
+footer{
+    display: block;
+    
+    background-color: var(--solidbgcolor);
+    padding-block: 3rem;
+    margin-inline: auto;
+}
+
+footer p{
+    text-align: center;
+}
