@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+:root{
+    --purplebg: #281448;
+    --textyellow: #FCB850;
+    --imgcardpurple: #1C0E34;
+    --rosio: #D6008F;
+    --solidbgcolor: #EAE8ED;
+    --solidtypecolor: #F6EAF9;
+    --textcolor: #646464;
+}
+
+html a {
+    text-decoration: none;
+}
+
+/* Fonte alternativa para textos menores, deixar p dps se quisermos usar*/
+
+/* font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+* {
+    /* reset do CSS */
+    font-family: "Righteous", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: repeat-x;
+  }
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    height: 4rem;
+    padding-top: 1rem;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(169,30,219,1) 0%, rgba(255,25,196,1) 100%);
+    z-index: 1000;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    display: block;
+    color: white;
+}
+
+.navbar nav ul a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar nav ul a li:hover {
+    text-decoration: underline;
+}
+
+.navbar nav ul li img {
+    height: 2rem; /* dps nós arruma sabosta KKKKKKKKKKK*/
+    width: auto;
+}
+
+body{
+    padding-top: 5rem;
+    background-color: var(--solidbgcolor);
+}
+
+h1{
+    color: var(--textyellow);
+    filter: drop-shadow(0px 5px 2.5px #00000091);
+    text-align: center;
+
+    font-size: 5rem;
+
+    padding-block: 4rem;
+
+    text-align: center;
+}
+
+h2{
+    color: var(--purplebg);
+
+    font-size: 3rem;
+    padding-block: 5rem;
+
+    text-align: center;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    color: var(--textcolor);
+
+    font-size: 1rem;
+
+    text-align: center;
+}
+
+section{
+    padding-block: 4rem;
+}
+
+h3{
+    font-size: 2rem;
+}
