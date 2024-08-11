@@ -71,10 +71,13 @@ html a {
 .bosta763{
     background-color: var(--solidbgcolor);
     margin-top: 4rem;
+    padding-bottom: 3rem;
 }
 
 .degrade{
-    background-image: url(/img/bggen.png);
+    width: auto;
+    height: 24rem;
+    background-image: url(/img/bgdna.png);
     background-repeat: repeat-x;
 }
 
@@ -88,4 +91,256 @@ html a {
     filter: drop-shadow(0px 20px 10px #00000086);
     text-align: center;
 }
- 
+
+.infocard{
+    display: flex;
+    columns: 2;
+    justify-content: center;
+}
+
+.infocard div{
+    border-radius: 1rem;
+}
+
+.info{
+    background-color: var(--textyellow);
+    width: 26rem;
+    height: fit-content;
+    padding: 1rem;
+    padding-right: -2rem;
+
+    z-index: 2;
+}
+
+.info h3, li{
+    color: #fff;
+}
+
+.info h3{
+    font-size: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.info li{
+    display: block;
+
+    padding-bottom: 1.25rem;
+    padding-inline: 0.75rem;
+
+    font-size: 1rem;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.infocard img{
+    margin-left: -1rem;
+    margin-top: 4rem;
+}
+
+.estrutura_dna{
+    display: inline-block;
+    padding: 4rem;
+    background-color: var(--purplebg);
+    margin-inline: auto;
+
+    height: 100%;
+    width: 100%;
+}
+
+.estrutura_dna h4{
+    color: var(--rosio);
+
+    font-size: 2.5rem;
+    padding-block: 2rem;
+
+    width: fit-content;
+}
+
+.estrutura_dna p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+    color: #fff;
+    float: left;
+
+    height: fit-content;
+    width: 50%;
+
+}
+
+.estrutura_dna img{
+    float: right;
+}
+
+.funcao{
+background-color: var(--purplebg);
+padding-bottom: 5rem;
+float: center;
+}
+
+.funcao h4{
+font-size: 2.5rem;
+color: #fff;
+margin-inline: 3.125rem;
+padding-block: 4rem;
+}
+
+.sintese_proteina p, .sintese_rna p{
+margin-inline: 4rem;
+background-color: var(--textyellow);
+border-radius: 1.5rem;
+height: fit-content;
+
+padding-inline: 2rem;
+padding-block: 2rem;
+
+}
+
+.funcao p{
+color: #fff;
+
+font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+text-align: center;
+
+height: 100%;
+width: 50%;
+
+font-size: 1.375rem;
+}
+
+.text{
+/* eu te amo ujhafsuy <3 */
+display: flex;
+flex-direction: column;
+align-items: center;
+
+height: fit-content;
+}
+
+.text img{
+border-radius: 20px;
+filter: drop-shadow(0px 10px 5px #00000099);
+margin-bottom: -1.25rem;
+}
+
+.funcao .sintese_rna{
+margin-top: 5rem;
+}
+
+
+.rep_transc{
+    padding: 3rem;
+    background-color: var(--solidbgcolor);
+}
+
+.rep_transc h3{
+    color: var(--purplebg);
+    font-size: 2.813rem;
+    padding-block: 4rem;
+
+}
+
+p span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    color: var(--rosio);
+}
+
+/* reutilizavel tb isso abaixo */
+
+.primeira-parte{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.segunda-parte{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.primeira-parte p, .segunda-parte p{
+    color: var(--textcolor);
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    padding: 2rem;
+    padding-block: 6rem;
+}
+
+.segunda-parte p{
+    text-align: right;
+    float: right;
+}
+
+footer{
+    display: block;
+    
+    background-color: var(--solidbgcolor);
+    padding-block: 3rem;
+    margin-inline: auto;
+}
+
+footer p{
+    text-align: center;
+    color: var(--rosio);
+}
+
+/* --- */
+
+.diff{
+    background-color: var(--imgcardpurple);
+    color: #fff;
+    padding: 3rem;
+
+    height: fit-content;
+    width: 100%;
+}
+.primarycontainer{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.diff h3{
+    font-size: 2.813rem;
+    padding-bottom: 2rem;
+}
+
+.diff span{
+    color: var(--rosio);
+}
+
+.containerlol{
+    width: 80%;
+}
+
+.containerlol ul{
+    padding-block: 2rem;
+}
+
+.diff .containerlol p, .containerlol li{
+    color: #fff;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.containerlol li{
+    font-size: 1.25rem;
+}
+
+li{
+    text-decoration: dotted;
+}
