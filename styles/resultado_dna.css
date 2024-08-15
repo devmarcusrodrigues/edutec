@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Righteous", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root{
+    --purplebg: #281448;
+    --textyellow: #FCB850;
+    --imgcardpurple: #1C0E34;
+    --rosio: #D6008F;
+    --solidbgcolor: #EAE8ED;
+    --solidtypecolor: #F6EAF9;
+    --textcolor: #646464;
+    --purple: #9829AE;
+    --purple-hover: rgba(167, 41, 245, 0.7);
+    --color-span: #626c7f;
+    --purple-hover: rgba(167, 41, 245, 0.7);
+    --primary-text-color: #313E51;
+    --secondary-text-color: #626c7f;
+    --button-bg: #fff;
+    --shadow: 0px 16px 40px 0px rgba(143,168,193,0.14);
+    --white: #fff;
+    --green: #2bd782;
+    --red: #ee5454;
+}
+
+body{
+    height: 100vh;
+    background: var(--solidbgcolor);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    margin-block: 81px;
+    max-width: 1160px;
+    margin-inline: auto;
+}
+
+.assunto{
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+
+.assunto_icone{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.assunto_icone img{
+    width: 100%;
+ }
+ 
+.assunto h1{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+ }
