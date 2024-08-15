@@ -93,6 +93,12 @@ section{
     padding-top: 1rem;
 }
 
+.flexcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 iframe{
     display: block;
     width: 960px;
