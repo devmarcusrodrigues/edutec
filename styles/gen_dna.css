@@ -12,6 +12,7 @@
 
 html a {
     text-decoration: none;
+    color: #fff;
 }
 
 /* Fonte alternativa para textos menores, deixar p dps se quisermos usar*/
@@ -68,7 +69,7 @@ html a {
     width: auto;
 }
 
-.bosta763{
+/* .bosta763{
     background-color: var(--solidbgcolor);
     margin-top: 4rem;
     padding-bottom: 3rem;
@@ -79,7 +80,7 @@ html a {
     height: 24rem;
     background-image: url(/img/bgdna.png);
     background-repeat: repeat-x;
-}
+} */
 
 .title{
     font-size: 4rem;
@@ -96,6 +97,7 @@ html a {
     display: flex;
     columns: 2;
     justify-content: center;
+    padding-bottom: 3rem;
 }
 
 .infocard div{
@@ -335,6 +337,7 @@ footer p{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+    padding-right: 1rem;
 }
 
 .containerlol li{
@@ -343,4 +346,8 @@ footer p{
 
 li{
     text-decoration: dotted;
+}
+
+.send a{
+    color: #fff;
 }
