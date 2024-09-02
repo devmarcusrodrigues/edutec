@@ -34,39 +34,88 @@ html a {
 
 .navbar {
     position: fixed;
-    height: 4rem;
-    padding-top: 1rem;
     top: 0;
     width: 100%;
+    height: 4rem;
     background: linear-gradient(90deg, rgba(169,30,219,1) 0%, rgba(255,25,196,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav .logo img {
+    height: 2.5rem;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar nav .logo img:hover {
+    transform: rotate(15deg) scale(1.1);
 }
 
 .navbar nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
+    gap: 2rem; /* gap pros links */
+    position: relative;
 }
 
 .navbar nav ul li {
-    display: block;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.navbar nav ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    filter: blur(8px);
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.navbar nav ul li:hover::before {
+    opacity: 1;
+    filter: blur(12px);
+}
+
+.navbar nav ul a {
     color: white;
-}
-
-.navbar nav ul a{
-    text-align: center;
     text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
 }
 
-.navbar nav ul a li:hover {
-    text-decoration: underline;
+.navbar nav ul a:hover {
+    color: #ffffff;
 }
 
-.navbar nav ul li img {
-    height: 2rem; /* dps nós arruma sabosta KKKKKKKKKKK*/
-    width: auto;
-}
 
 body{
     padding-top: 5rem;
