@@ -2,7 +2,7 @@
 
 ## A fazer:
 
-- Fazer HTML do quiz e dos vídeos;
+- Fazer HTML do quiz e dos vídeos; (Videos feitos! Falta só o quiz!!)
 - Terminar CSS das páginas;
 - Adicionar um ícone na tab do site;
 - Colocar os círculos de fundo;
