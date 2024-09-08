@@ -60,7 +60,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 2.5rem;
+    height: 4rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -120,6 +120,7 @@ html a {
 body{
     padding-top: 5rem;
     background-color: var(--solidbgcolor);
+    max-width: 1500px; /*nao sei*/
 }
 
 h1{
@@ -153,6 +154,10 @@ p{
 
     font-size: 1rem;
 
+    text-align: center;
+}
+
+ul{
     text-align: center;
 }
 
