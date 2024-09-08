@@ -1,0 +1,214 @@
+{
+    "quizzes": [
+        {
+            "title": "Genética",
+            "questions": [
+                {
+                    "question": "Quais são os três tipos principais de genética?",
+                    "options": [
+                        "Genética clássica, molecular, evolutiva e genômica.",
+                        "Genética celular, de tecidos, ambiental e populações.",
+                        "Genética estrutural, nuclear, citoplasmática e ambiental.",
+                        "Genética somática, embrionária, neural e cerebral."
+                    ],
+                    "answer": "Genética clássica, molecular, evolutiva e genômica."
+                },
+                {
+                    "question": "Qual é uma das aplicações mais comuns da genética?",
+                    "options": [
+                        "Produção de energia.",
+                        "Identificação de doenças hereditárias.",
+                        "Crescimento de plantas.",
+                        "Controle de clima."
+                    ],
+                    "answer": "Identificação de doenças hereditárias."
+                },
+                {
+                    "question": "O que a genética estuda?",
+                    "options": [
+                        "O comportamento humano.",
+                        "A hereditariedade e variações dos seres vivos.",
+                        "O sistema nervoso.",
+                        "A reprodução dos organismos."
+                    ],
+                    "answer": "A hereditariedade e variações dos seres vivos."
+                },
+                {
+                    "question": "O que é uma célula haploide?",
+                    "options": [
+                        "Uma célula que possui dois conjuntos de cromossomos.",
+                        "Uma célula que possui um conjunto único de cromossomos.",
+                        "Uma célula que não possui cromossomos.",
+                        "Uma célula que possui quatro conjuntos de cromossomos."
+                    ],
+                    "answer": "Uma célula que possui um conjunto único de cromossomos."
+                },
+                {
+                    "question": "Quem foi o pai da genética?",
+                    "options": [
+                        "Charles Darwin.",
+                        "Louis Pasteur.",
+                        "Gregor Mendel.",
+                        "James Watson."
+                    ],
+                    "answer": "Gregor Mendel."
+                },
+                {
+                    "question": "O que é uma célula diploide?",
+                    "options": [
+                        "Uma célula que possui um único conjunto de cromossomos.",
+                        "Uma célula que possui dois conjuntos completos de cromossomos.",
+                        "Uma célula que não possui cromossomos.",
+                        "Uma célula que possui três conjuntos de cromossomos."
+                    ],
+                    "answer": "Uma célula que possui dois conjuntos completos de cromossomos."
+                },
+                {
+                    "question": "O que é uma célula evolutiva?",
+                    "options": [
+                        "Uma célula que participa da evolução dos organismos ao longo das gerações.",
+                        "Uma célula que não evolui.",
+                        "Uma célula que é criada em laboratório para estudar evolução.",
+                        "Uma célula que possui apenas um tipo de cromossomo."
+                    ],
+                    "answer": "Uma célula que participa da evolução dos organismos ao longo das gerações."
+                },
+                {
+                    "question": "Qual o papel da genética clássica?",
+                    "options": [
+                        "Estudar a replicação do DNA.",
+                        "Analisar a hereditariedade através de cruzamentos.",
+                        "Produzir proteínas celulares.",
+                        "Modificar genes no laboratório."
+                    ],
+                    "answer": "Analisar a hereditariedade através de cruzamentos."
+                },
+                {
+                    "question": "Como a genética molecular pode ser aplicada na medicina?",
+                    "options": [
+                        "Para identificar doenças hereditárias.",
+                        "Para aumentar a produção de energia celular.",
+                        "Para alterar características físicas.",
+                        "Para reduzir a mutação de vírus."
+                    ],
+                    "answer": "Para identificar doenças hereditárias."
+                },
+                {
+                    "question": "O que são alelos?",
+                    "options": [
+                        "Diferentes formas de um mesmo gene.",
+                        "Células somáticas.",
+                        "Moléculas de RNA.",
+                        "Proteínas estruturais."
+                    ],
+                    "answer": "Diferentes formas de um mesmo gene."
+                }
+            ]
+        },
+        {
+            "title": "DNA",
+            "questions": [
+                {
+                    "question": "Qual é a principal função do DNA?",
+                    "options": [
+                        "Produzir energia.",
+                        "Carregar informações genéticas.",
+                        "Facilitar a digestão.",
+                        "Produzir oxigênio."
+                    ],
+                    "answer": "Carregar informações genéticas."
+                },
+                {
+                    "question": "Qual é a estrutura do DNA?",
+                    "options": [
+                        "Espiral simples.",
+                        "Hélice dupla.",
+                        "Folha dupla.",
+                        "Espiral tripla."
+                    ],
+                    "answer": "Hélice dupla."
+                },
+                {
+                    "question": "O que acontece durante a replicação do DNA?",
+                    "options": [
+                        "O DNA se divide em novas células.",
+                        "O DNA cria uma cópia de si mesmo.",
+                        "O DNA produz proteínas.",
+                        "O DNA se transforma em RNA."
+                    ],
+                    "answer": "O DNA cria uma cópia de si mesmo."
+                },
+                {
+                    "question": "Como o DNA se difere do RNA?",
+                    "options": [
+                        "O DNA tem ribose, e o RNA tem desoxirribose.",
+                        "O DNA é uma fita dupla, e o RNA é uma fita simples.",
+                        "O RNA contém timina, e o DNA contém uracila.",
+                        "O RNA se replica, e o DNA não."
+                    ],
+                    "answer": "O DNA é uma fita dupla, e o RNA é uma fita simples."
+                },
+                {
+                    "question": "Onde o DNA está localizado nas células?",
+                    "options": [
+                        "No núcleo.",
+                        "No citoplasma.",
+                        "Nos ribossomos.",
+                        "Nas mitocôndrias."
+                    ],
+                    "answer": "No núcleo."
+                },
+                {
+                    "question": "Quais são as bases nitrogenadas presentes no DNA?",
+                    "options": [
+                        "Adenina, Guanina, Citosina e Timina.",
+                        "Adenina, Uracila, Guanina e Timina.",
+                        "Citosina, Uracila, Timina e Adenina.",
+                        "Timina, Guanina, Citosina e Uracila."
+                    ],
+                    "answer": "Adenina, Guanina, Citosina e Timina."
+                },
+                {
+                    "question": "Qual a importância da replicação do DNA?",
+                    "options": [
+                        "Criar novas bases nitrogenadas.",
+                        "Garantir que as células filhas recebam uma cópia idêntica do DNA.",
+                        "Produzir novas células.",
+                        "Aumentar a quantidade de RNA nas células."
+                    ],
+                    "answer": "Garantir que as células filhas recebam uma cópia idêntica do DNA."
+                },
+                {
+                    "question": "O que é o RNA?",
+                    "options": [
+                        "Uma cópia do DNA que é usada para criar proteínas.",
+                        "Uma molécula que armazena energia.",
+                        "Uma proteína que copia o DNA.",
+                        "Uma substância encontrada apenas em vírus."
+                    ],
+                    "answer": "Uma cópia do DNA que é usada para criar proteínas."
+                },
+                {
+                    "question": "O que ocorre durante a transcrição do DNA?",
+                    "options": [
+                        " O DNA é convertido em RNA.",
+                        "O RNA cria novas proteínas.",
+                        "O DNA é replicado.",
+                        "O RNA se transforma em DNA."
+                    ],
+                    "answer": "O DNA é convertido em RNA."
+                },
+                {
+                    "question": "O que é a transcrição do DNA?",
+                    "options": [
+                        "A produção de proteínas a partir de DNA.",
+                        "O processo de copiar a informação do DNA para o RNA.",
+                        "A divisão do DNA em duas fitas.",
+                        "A conversão de proteínas em DNA."
+                    ],
+                    "answer": "O processo de copiar a informação do DNA para o RNA."
+                }
+            ]
+        }
+    ]
+}
