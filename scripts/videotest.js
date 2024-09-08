@@ -2,26 +2,26 @@
 const videos = [
     {
         titulo: "Introdução à Genética",
-        duracao: "10:05",
+        duracao: "7:15",
         descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
         src: "https://www.youtube.com/embed/ipSpg8IjfaM?si=xsJERTG-JCECOD-z"
     },
     {
-        titulo: "O que é o DNA?",
-        duracao: "12:30",
-        descricao: "Entenda o que é o DNA, sua estrutura e função no organismo.",
+        titulo: "O que são os genes?",
+        duracao: "4:39",
+        descricao: "Entenda o que são os genes e suas estruturas.",
         src: "https://www.youtube.com/embed/E6DPIgLqdCo?si=h5t9BB8oYT2wPShP"
     },
     {
-        titulo: "Mutação Genética",
-        duracao: "8:45",
-        descricao: "Explore as mutações genéticas e como elas podem afetar os seres vivos.",
+        titulo: "Conceitos na área da genética!",
+        duracao: "16:11",
+        descricao: "Explore os conceitos básicos da genética e como são aplicados.",
         src: "https://www.youtube.com/embed/Mh8jpGeEDLw?si=z3Vft1jMsTXEwW1i"
     },
     {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
+        titulo: "1ª Lei de Mendel",
+        duracao: "6:42",
+        descricao: "Este vídeo apresenta a primeira lei de Mendel.",
         src: "https://www.youtube.com/embed/bxTsEeQ2amE?si=adloyKKq-A0xsiwx"
     },
     {
