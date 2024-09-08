@@ -272,8 +272,12 @@ h3{
 }
 
 .profile strong {
-    padding-top: 6rem;
-    padding-left: 2rem;
+    padding-block: 6rem;
+    padding-inline: 2rem;
+}
+
+.profile img{
+    border-radius: 100rem;
 }
 
 .card_pessoas p {
