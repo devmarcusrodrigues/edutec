@@ -13,13 +13,12 @@
 
 html a {
     text-decoration: none;
-    
 }
 
 * {
     /* reset do CSS */
-    /* font-family: "Inter", sans-serif; */
-    font-family: 'Righteous', sans-serif;
+    font-family: "Inter", sans-serif;
+    /* font-family: 'Righteous', sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -91,7 +90,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4rem;  /* aumentei a imagem de 2.5 pra 4 */
+    height: 4.5rem;  /* aumentei a imagem de 2.5 pra 4.5 */
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -140,7 +139,6 @@ html a {
     font-weight: 400;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
-    font-family: 'Poppins', sans-serif;
 }
 
 .navbar nav ul a:hover {
@@ -160,7 +158,7 @@ html a {
     font-family: 'Righteous', sans-serif;
     text-align: center;
     color: var(--textyellow);
-    filter: drop-shadow(0px 20px 10px #0000005b);
+    filter: drop-shadow(0px 20px 10px #0000002a);
     height: 12.375rem;
     left: 17.188rem;
     top: 12.188rem;
@@ -175,6 +173,7 @@ html a {
     width: 48.75rem;
     font-weight: 400;
     margin: 0 auto;
+    letter-spacing: 50%;
 }
 
 .cursos {
@@ -187,6 +186,7 @@ html a {
     font-size: 3.75rem;
     text-align: center;
     padding-bottom: 4rem;
+    font-family: "Righteous", sans-serif;
 }
 
 .cursocard{
@@ -205,11 +205,11 @@ html a {
 }
 
 .cursocard div{
+    display: block;
     background-color: var(--imgcardpurple);
     height: 25rem;
     width: 18.75rem;
     border-radius: 2.188rem;
-    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
     /* border: red 2px solid; */
     /* É ISSO MLK */
 }
@@ -219,7 +219,7 @@ html a {
     height: 8.25rem;
     width: 6rem;
     margin-inline: auto;
-    padding-inline: auto;
+    /* padding-inline: auto; */
     padding-top: 2.5rem;
     margin-bottom: 1.5rem;
 }
@@ -228,8 +228,6 @@ html a {
     color: #fff;
     text-align: center;
     padding-top: 2rem;
-
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -248,50 +246,9 @@ html a {
 .video a{
     font-size: 3.75rem;
     color: #fff;
-
+    
 }
-/* ngc de resposividaade, nao tenho ideia nenhuma disso*/
 
-@media(min-width: 1100px) {
-    body{
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    header {
-        margin-block: 81px;
-        max-width: 1160px;
-        margin-inline: auto;
-    }
-
-
-    .landing {
-        background-image: url(/img/background.png);
-        background-color: var(--solidbgcolor);
-        margin-top: 2rem;
-        padding: 11rem 0;
-        text-align: center;
-    }
-    
-    .landing h1{
-        font-size: 2;
-        text-align: center;
-        color: var(--textyellow);
-        filter: drop-shadow(0px 20px 10px #00000099);
-        font-weight: 400;
-        height: 12.375rem;
-        left: 17.188rem;
-        top: 12.188rem;
-    }
-    
-    
-    .landing h2{
-        font-size: 2.813rem;
-        color: var(--rosio);
-        text-align: center;
-        line-height: normal;
-        width: 48.75rem;
-        font-weight: 400;
-        margin: 0 auto;
-    }
+.video a:hover{
+    text-decoration: underline;
 }
