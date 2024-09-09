@@ -2,7 +2,7 @@
 
 ## A fazer:
 
-- Fazer HTML do quiz e dos vídeos; (Videos feitos! Falta só o quiz!!)
+- Fazer HTML do quiz;
 - Terminar CSS das páginas;
 - Adicionar um ícone na tab do site;
 - Colocar os círculos de fundo;
@@ -13,7 +13,9 @@
 
 - ### Fazer um full rewrite, se possível (O código HTML está bom, mas o CSS está aos pedaços devido ao pouco tempo que temos).
 
-#### Mudancas
+#### Mudanças
 
-- Tamanho das logo: de 2.5rem para 5rem
+- Tamanho das logo: de 2.5rem para 4rem
 - fac 
+- link insta
+- box-shadow nos cards
