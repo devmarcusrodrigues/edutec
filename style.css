@@ -165,7 +165,8 @@ html a {
     font-family: 'Righteous', sans-serif;
     text-align: center;
     color: var(--textyellow);
-    filter: drop-shadow(0px 20px 10px #0000002a);
+    filter: drop-shadow(0px 20px 10px #00000099);
+    font-weight: 400;
     height: 12.375rem;
     left: 17.188rem;
     top: 12.188rem;
@@ -180,7 +181,6 @@ html a {
     width: 48.75rem;
     font-weight: 400;
     margin: 0 auto;
-    letter-spacing: 50%;
 }
 
 .cursos {
