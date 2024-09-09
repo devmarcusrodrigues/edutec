@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- links pra style e scripts -->
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/styles/dna_gen.css">
-    <script type="module" src="../pop.js" defer></script>
-=======
     <link rel="stylesheet" href="/styles/gen.css">
->>>>>>> 7105a7053708d2fe77a3b08acc00e88aa1c0daf9
+    <script type="module" src="../pop.js" defer></script>
 
     <title>GeneSync</title>
 </head>
@@ -76,13 +72,55 @@
                     </strong>
     
                     <div class="tipos">
-                        <div id="classica"><p>Genética Classica</p></div>
-                        <div id="molecular"><p>Genética Molecular</p></div>
-                        <div id="evolutiva"><p>Genética Evolutiva</p></div>
-                        <div id="genomica"><p>Genômica</p></div>
+                        <div id="classica" class="tipo"><p>Genética Clássica</p></div>
+                        <div id="molecular" class="tipo"><p>Genética Molecular</p></div>
+                        <div id="evolutiva" class="tipo"><p>Genética Evolutiva</p></div>
+                        <div id="genomica" class="tipo"><p>Genômica</p></div>
                     </div>
+
+                    <div id="modalClassica" class="modal">
+                        <div class="modal-content">
+                          <span class="fechar">&times;</span>
+                          <h2>Genética Clássica</h2>
+                          <p>A Genética Clássica se baseia nas leis de Mendel e no estudo da hereditariedade.</p>
+                          <button class="fecharModal">Fechar</button>
+                        </div>
+                      </div>
+                      
+                      <!-- Pop-up para Genética Molecular -->
+                      <div id="modalMolecular" class="modal">
+                        <div class="modal-content">
+                          <span class="fechar">&times;</span>
+                          <h2>Genética Molecular</h2>
+                          <p>A Genética Molecular estuda a estrutura e função dos genes no nível molecular.</p>
+                          <button class="fecharModal">Fechar</button>
+                        </div>
+                      </div>
+                      
+                      <!-- Pop-up para Genética Evolutiva -->
+                      <div id="modalEvolutiva" class="modal">
+                        <div class="modal-content">
+                          <span class="fechar">&times;</span>
+                          <h2>Genética Evolutiva</h2>
+                          <p>A Genética Evolutiva investiga como os genes e suas frequências mudam ao longo do tempo nas populações.</p>
+                          <button class="fecharModal">Fechar</button>
+                        </div>
+                      </div>
+                      
+                      <!-- Pop-up para Genômica -->
+                      <div id="modalGenomica" class="modal">
+                        <div class="modal-content">
+                          <span class="fechar">&times;</span>
+                          <h2>Genômica</h2>
+                          <p>A Genômica foca no estudo completo dos genomas dos organismos.</p>
+                              <button class="fecharModal">Fechar</button>
+                          
+                        </div>
+                      </div>
                 </div>
             </section>
+
+
     
             <section class="cells">
                 <h4>Células da <span>Genética</span></h4>
