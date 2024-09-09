@@ -13,6 +13,7 @@
 
 html a {
     text-decoration: none;
+    
 }
 
 * {
@@ -90,7 +91,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4.5rem;  /* aumentei a imagem de 2.5 pra 4.5 */
+    height: 4rem;  /* aumentei a imagem de 2.5 pra 4 */
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -216,6 +217,7 @@ html a {
     height: 25rem;
     width: 18.75rem;
     border-radius: 2.188rem;
+    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
     /* border: red 2px solid; */
     /* É ISSO MLK */
 }
@@ -253,8 +255,4 @@ html a {
     font-size: 3.75rem;
     color: #fff;
     
-}
-
-.video a:hover{
-    text-decoration: underline;
 }

@@ -60,7 +60,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4rem;  
+    height: 2.5rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -127,60 +127,94 @@ section{
 
 .title{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 1rem;
 }
 
-h1{
+.title img{
+    width: 10%;
+    height: 10%;
+}
+
+.title h1{
+    font-size: 5rem;
     color: var(--purplebg);
-    filter: drop-shadow(0px 5px 2.5px #00000091);
-    font-size: 6rem;
+    padding-top: 1rem;
 }
 
-h1 span{
-    color: #fff;
-}
-
-.quizzes{
-    width: 100%;
+.flexcontainer{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quizzes a{
-    background: var(--purplebg);
-    display: block;
-    height: 24rem;
-    width: 24rem;
-    margin-inline: auto;
-    padding-inline: auto;
-    border-radius: 2rem; 
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
-}
-
-.quizzes a div img{
-    display: block;
-    margin: auto;
-    padding: auto;
-    margin-top: 3rem;
-}
-
-.dnaquiz img{
-    width: 12.286rem;
-    height: auto;
-}
-
-.genquiz img{
-    width: 12.286rem;
-    height: auto;
-}
-
-h2{
-    display: flex;
-    padding-top: 2rem;
     align-items: center;
     justify-content: center;
-    color: #fff;
+}
+
+iframe{
+    display: block;
+    width: 960px;
+    height: 540px;
+}
+
+.content h2{
+    color: var(--textyellow);
     font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.content h3{
+    padding-bottom: 2rem;
+}
+
+.desc {
+    height: 12rem;
+    background-color:#CEE8D0;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    
+}
+
+.desc p{
+    font-family: "Noto Sans Display", sans-serif;
+}
+
+/* OOOOO DIFICULDADE P FZR ESSES BOTAO */
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+}
+
+button.proximo, button.anterior {
+    background-color: var(--purplebg);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 250px;
+    text-align: center;
+}
+
+button.proximo:hover, button.anterior:hover {
+    background-color: var(--rosio);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+button.proximo:active, button.anterior:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.proximo {
+    background: linear-gradient(90deg, rgba(169,30,219,1) 0%, rgba(255,25,196,1) 100%);
+}
+
+button.anterior {
+    background: linear-gradient(90deg, rgba(255,25,196,1) 0%, rgba(169,30,219,1) 100%);
 }
