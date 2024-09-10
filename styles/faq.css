@@ -60,7 +60,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4.5rem;  /* aumentei a imagem de 2.5 pra 4.5 */
+    height: 4rem;  /* aumentei a imagem de 2.5 pra 4.5 */
     width: auto;
     transition: transform 0.3s ease-in-out;
 }

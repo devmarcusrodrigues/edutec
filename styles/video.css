@@ -63,7 +63,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 2.5rem;
+    height: 4rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
