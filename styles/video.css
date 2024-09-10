@@ -31,35 +31,6 @@ html a {
   font-weight: <weight>;
   font-style: normal; */
 
-  .inter-100 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-  }
-
-  .inter-400 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .inter-600 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  .inter-800 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-
   /* Navbar */
 
   .navbar {
@@ -210,10 +181,6 @@ iframe{
     
 }
 
-.desc p{
-    font-family: "Inter", sans-serif;
-}
-
 /* OOOOO DIFICULDADE P FZR ESSES BOTAO */
 
 .buttons {
@@ -228,9 +195,8 @@ button.proximo, button.anterior {
     background-color: var(--purplebg);
     color: white;
     border: none;
-    padding: 1rem 2rem;
+    padding: 0.5rem 4rem;
     font-size: 1.2rem;
-    font-family: 'Inter', sans-serif;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

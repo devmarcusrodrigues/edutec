@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 :root{
@@ -17,7 +16,7 @@ html a {
 
 * {
     /* reset do CSS */
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
     /* font-family: 'Righteous', sans-serif; */
     margin: 0;
     padding: 0;
@@ -30,35 +29,6 @@ html a {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal; */
-
-  .inter-100 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-  }
-
-  .inter-400 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .inter-600 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  .inter-800 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
 
   /* Navbar */
 
@@ -181,12 +151,15 @@ h2{
 }
 
 p{
-    font-family: "Inter", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: var(--textcolor);
     font-size: 1rem;
     text-align: center;
+}
+
+.perguntas div{
+    margin-inline: 3rem;
 }
 
 section{
@@ -305,15 +278,15 @@ h3{
 
 .profile strong {
     padding-top: 6rem;
-    padding-left: 2rem;
+    gap: 1rem;
     font-family: "Righteous", sans-serif;
 }
 
 .card_pessoas p {
     color: #fff;
-    font-family: "Inter", sans-serif;
     padding-top: 3rem;
     font-size: 1.75rem;
+    font-family: "Righteous", sans-serif;
 }
 .bug_report{
     display: flex;

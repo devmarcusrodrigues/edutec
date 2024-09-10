@@ -33,7 +33,7 @@ html a {
 
   /* Navbar */
 
-  .navbar {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -116,122 +116,99 @@ html a {
     color: #ffffff;
 }
 
-/* .maincontainer{
+.maincontainer{
     display: block;
     margin-inline: auto;
     max-width: 1366px;
-} */
-
-.landing {
-    background-image: url(/img/background.png);
-    background-color: var(--solidbgcolor);
-    margin-top: 4rem;
-    padding: 11rem 0;
-    text-align: center;
 }
 
-.landing h1{
-    font-size: 9.375rem;
-    font-family: 'Righteous', sans-serif;
-    text-align: center;
-    color: var(--textyellow);
-    filter: drop-shadow(0px 20px 10px #00000099);
-    font-weight: 400;
-    height: 12.375rem;
-    left: 17.188rem;
-    top: 12.188rem;
-}
-
-
-.landing h2{
-    font-size: 2.813rem;
-    color: var(--rosio);
-    text-align: center;
-    line-height: normal;
-    width: 48.75rem;
-    font-weight: 400;
-    margin: 0 auto;
-    font-family:'Righteous', sans-serif;
-}
-
-.cursos {
+main{
+    padding-block: 6rem;
     background-color: var(--purplebg);
-    padding: 14rem;
 }
 
-.cursos h3 {
-    color: var(--textyellow);
-    font-size: 3.75rem;
-    text-align: center;
-    padding-bottom: 4rem;
-    font-family: "Righteous", sans-serif;
-}
-
-.cursocard{
-    /* AAAAAAAAAAAAAAAAAAAAAAAAAA ENTÃO ERA ISSO */
+.jogo-da-forca {
     display: flex;
-    columns: 2;
-    gap: 6rem;
-
-
-
-
-    /* DESGRAÇAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-
-    /* TUDO DELES NADA NOSSO, AQUI É SÓ REGRESSO UFF */
+    color: #EFE7DA;
+    font-family: 'Righteous', sans-serif; 
 }
 
-.cursocard div{
-    display: block;
-    background-color: var(--imgcardpurple);
-    height: 25rem;
-    width: 18.75rem;
-    border-radius: 2.188rem;
-    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
-    /* border: red 2px solid; */
-    /* É ISSO MLK */
+#container-palavra {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    margin: 1rem 0;
 }
 
-.cursocard img{
-    display: block;
-    height: 8.25rem;
-    width: 6rem;
-    margin-inline: auto;
-    /* padding-inline: auto; */
-    padding-top: 2.5rem;
-    margin-bottom: 1.5rem;
+.container-letras {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
 }
 
-.cursocard div a p{
-    color: #fff;
+.container-letras button {
+    background-color: var(--rosio);
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.container-letras button:hover {
+    background-color: var(--textyellow);
+}
+
+#botao-reiniciar {
+    margin-top: 1rem;
+    background-color: var(--rosio);
+    color: white;
+    font-size: 1.25rem;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botao-reiniciar:hover {
+    background-color: var(--textyellow);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-conteudo {
+    background-color: #fff;
+    color: #000;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
     text-align: center;
-    padding-top: 2rem;
-    font-weight: 300;
-    font-style: normal;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.cursocard div a strong p{
-    color: var(--rosio);
-    font-size: 2.813rem;
-
-    font-family: "Righteous", sans-serif;
+.fechar {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-
-.video{
-    margin-top: 6.25rem;
-}
-
-.video a span{
-    color: var(--textyellow);
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-} 
-
-.video a{
-    font-size: 3.75rem;
-    color: #fff;
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
+.fechar:hover {
+    color: red;
 }

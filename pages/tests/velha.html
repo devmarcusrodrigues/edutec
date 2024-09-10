@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="velha.css">
+    <script src="../../scripts/velha.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="navbar">
+            <nav>
+                <div class="logo">
+                    <a href="/index.html"><img src="/img/LOGO.png" alt="Logo do projeto"></a>
+                </div>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/genetica.html">Genética</a></li>
+                    <li><a href="/pages/dna.html">DNA</a></li>
+                    <li><a href="/pages/video.html">Videoaulas</a></li>
+                    <li><a href="/pages/tests/velha.html">Jogo</a></li>
+                    <li><a href="/pages/faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="maincontainer">
+            <section class="jogo-da-forca">
+                <h1>Jogo da Forca</h1>
+                <div id="container-palavra"></div>
+                <div id="mensagem"></div>
+                <p>Erros: <span id="contador-erros">0</span>/5</p>
+                <div class="container-letras" id="container-letras"></div>
+                <button id="botao-reiniciar">Recomeçar Jogo</button>
+            </section>            
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-conteudo">
+                <span class="fechar">&times;</span>
+                <p id="mensagem-popup"></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
