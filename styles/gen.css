@@ -9,6 +9,7 @@
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
     --bg-desktop: url(../../img/pattern-background-desktop-light.svg);
+    --bg-mobile: url(../../img/pattern-background-mobile-light.svg);
 }
 
 html a {
@@ -124,7 +125,9 @@ html a {
 }
 
 .bosta763{
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .degrade{
@@ -206,9 +209,10 @@ html a {
 /* -------------------------------------------------------------- */
 
 .area_tipos{
-    background-color: var(--purplebg);
+    background: var(--purplebg);
     padding: 4rem 2rem 6rem 2rem; /* Ajuste geral de padding */
     text-align: center;
+
 }
 
 .area_tipos h4{
@@ -234,30 +238,32 @@ html a {
 
 .area_tipos {
     text-align: center;
+
   }
-  
-  .tipos {
+
+
+.tipos {
     display: flex;
     justify-content: center;
     gap: 3rem; /* Mais espaçamento entre os blocos */
     padding-top: 2rem;
-  }
-  
-  .tipo {
+}
+
+.tipo {
     padding: 20px;
-    background-color: lightgray;
+    background-color: var(--solidbgcolor);
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
-  .tipo:hover {
-    background-color: gray;
+.tipo:hover {
+    background-color: var(--textyellow);
     color: white;
   }
   
   /* Estilos para os modais */
-  .modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -268,16 +274,26 @@ html a {
     background-color: rgba(0, 0, 0, 0.5);
   }
   
-  .modal-content {
+.modal-content {
     background-color: var(--solidbgcolor);
     margin: 15% auto;
-    padding: 20px;
-    width: 50%;
     text-align: center;
     border-radius: 1rem;
-  }
+    padding: 30px; /* Aumentar padding para dar mais espaçamento interno */
+    width: 60%; /* Aumentar largura para dar mais espaço ao conteúdo */
+    line-height: 1.6; /* Aumentar o espaçamento entre linhas */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: var(--purplebg);
+}
+
+.modal-content p {
+    margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+}
   
-  .fechar {
+.fechar {
     color: red;
     float: right;
     font-size: 28px;
@@ -285,7 +301,7 @@ html a {
     cursor: pointer;
   }
   
-  button {
+button {
     padding: 10px 20px;
     background-color: var(--rosio);
     color: white;
@@ -293,7 +309,7 @@ html a {
     cursor: pointer;
   }
   
-  button:hover {
+button:hover {
     background-color: var(--purplebg);
   }
 
@@ -314,12 +330,14 @@ html a {
     width: 9rem;
 
     border-radius: 1.25rem;
+    display: flex; /* Para usar flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
 .tipos div p{
-    font-weight: 300;
     font-style: normal;
-
+    font-weight: 500;
     color: var(--rosio);
 
     text-align: center;
@@ -332,7 +350,7 @@ span{
 }
 
 .cells{
-    background-color: var(--purplebg);
+    background: var(--purplebg);
     padding-bottom: 5rem;
     float: center;
 }
