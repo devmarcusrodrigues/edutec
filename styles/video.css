@@ -10,6 +10,7 @@
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
     --textcolor: #646464;
+    --bg-desktop: url(../../img/pattern-background-desktop-light.svg);
 }
 
 html a {
@@ -120,7 +121,9 @@ html a {
 
 body{
     padding-top: 5rem;
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-desktop);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section{
