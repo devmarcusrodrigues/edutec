@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
-
-:root{
+:root {
     --purplebg: #281448;
     --textyellow: #FCB850;
     --imgcardpurple: #1C0E34;
@@ -12,28 +11,18 @@
 
 html a {
     text-decoration: none;
-    
 }
 
 * {
-    /* reset do CSS */
     font-family: "Poppins", sans-serif;
-    /* font-family: 'Righteous', sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-/* Fontes alternativas para textos menores, deixar p dps se quisermos usar*/
+/* Navbar */
 
-/* font-family: "Noto Sans Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal; */
-
-  /* Navbar */
-
-  .navbar {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -61,7 +50,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4rem;  /* aumentei a imagem de 2.5 pra 4 */
+    height: 4rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -75,7 +64,7 @@ html a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 2rem; /* gap pros links */
+    gap: 2rem;
     position: relative;
 }
 
@@ -116,11 +105,10 @@ html a {
     color: #ffffff;
 }
 
-/* .maincontainer{
-    display: block;
-    margin-inline: auto;
-    max-width: 1366px;
-} */
+body{
+    background-color: var(--solidbgcolor);
+}
+/* Landing */
 
 .landing {
     background-image: url(/img/background.png);
@@ -130,7 +118,7 @@ html a {
     text-align: center;
 }
 
-.landing h1{
+.landing h1 {
     font-size: 9.375rem;
     font-family: 'Righteous', sans-serif;
     text-align: center;
@@ -142,8 +130,7 @@ html a {
     top: 12.188rem;
 }
 
-
-.landing h2{
+.landing h2 {
     font-size: 2.813rem;
     color: var(--rosio);
     text-align: center;
@@ -151,59 +138,50 @@ html a {
     width: 48.75rem;
     font-weight: 400;
     margin: 0 auto;
-    font-family:'Righteous', sans-serif;
+    font-family: 'Righteous', sans-serif;
 }
+
+/* Cursos */
 
 .cursos {
     background-color: var(--purplebg);
-    padding: 14rem;
+    padding: 8rem 2rem; /* Reduzido de 14rem para 8rem no topo e nas laterais */
 }
 
 .cursos h3 {
     color: var(--textyellow);
     font-size: 3.75rem;
     text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem; /* Reduzido de 4rem para 2rem */
     font-family: "Righteous", sans-serif;
 }
 
-.cursocard{
-    /* AAAAAAAAAAAAAAAAAAAAAAAAAA ENTÃO ERA ISSO */
+.cursocard {
     display: flex;
-    columns: 2;
-    gap: 6rem;
-
-
-
-
-    /* DESGRAÇAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+    flex-wrap: wrap; /* Garante que os cards se ajustem conforme necessário */
+    gap: 4rem; /* Reduzido de 6rem para 4rem */
     justify-content: center;
-
-    /* TUDO DELES NADA NOSSO, AQUI É SÓ REGRESSO UFF */
 }
 
-.cursocard div{
+.cursocard div {
     display: block;
     background-color: var(--imgcardpurple);
     height: 25rem;
     width: 18.75rem;
     border-radius: 2.188rem;
     box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
-    /* border: red 2px solid; */
-    /* É ISSO MLK */
 }
 
-.cursocard img{
+.cursocard img {
     display: block;
     height: 8.25rem;
     width: 6rem;
     margin-inline: auto;
-    /* padding-inline: auto; */
     padding-top: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
-.cursocard div a p{
+.cursocard div a p {
     color: #fff;
     text-align: center;
     padding-top: 2rem;
@@ -211,27 +189,34 @@ html a {
     font-style: normal;
 }
 
-.cursocard div a strong p{
+.cursocard div a strong p {
     color: var(--rosio);
     font-size: 2.813rem;
-
     font-family: "Righteous", sans-serif;
 }
 
+/* Descrição do Vídeo */
 
-.video{
-    margin-top: 6.25rem;
+.descricaovideo .video {
+    background-color: var(--purplebg);
+    text-align: center;
+    margin-top: 2rem; /* Espaço acima do texto */
+    margin: ;
 }
 
-.video a span{
-    color: var(--textyellow);
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-} 
-
-.video a{
+.descricaovideo .video a {
+    display: block;
     font-size: 3.75rem;
     color: #fff;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
+    text-decoration: none;
+}
+
+.descricaovideo .video a span {
+    display: block;
+    color: var(--textyellow);
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    margin-top: 1rem; /* Espaço entre as linhas de texto */
 }
