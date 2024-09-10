@@ -158,6 +158,15 @@ p{
     text-align: center;
 }
 
+.perguntas p {
+    margin: 20px 40px; /* Adiciona margens maiores à esquerda e à direita */
+    padding: 15px;
+    background-color: white; /* Cor de fundo clara para destacar o texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px var(--purplebg); /* Leve sombra para destacar */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
 .perguntas div{
     margin-inline: 3rem;
 }
