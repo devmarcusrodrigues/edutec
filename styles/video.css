@@ -119,6 +119,12 @@ html a {
     color: #ffffff;
 }
 
+.maincontainer{
+    display: block;
+    margin-inline: auto;
+    max-width: 1366px;
+}
+
 body{
     padding-top: 5rem;
     background: var(--solidbgcolor) var(--bg-desktop);
@@ -225,11 +231,17 @@ button.anterior {
 }
 
 .top-buttons {
-    position: absolute; /* Permite posicionamento livre */
-    top:  9rem; /* Distância do topo */
-    right: 10.5rem; /* Alinhamento à direita */
+    top:  9rem;
+    right: 10.5rem;
     display: flex;
     gap: 30px;
+    /* align-items: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto; */
+
   }
   
 .btn {
@@ -249,6 +261,7 @@ button.anterior {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px 10px 10px 10px; /* Bordas arredondadas apenas no topo */
+    
 }
 
 /* Botão ativo - quando está selecionado */

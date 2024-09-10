@@ -1,4 +1,4 @@
-const palavras = ['genesync', 'marcus', 'genomica', 'mendel', 'dna', 'genes', 'genetica', 'replicacao', 'transcricao'];
+const palavras = ['genesync', 'genomica', 'mendel', 'dna', 'genes', 'genetica', 'replicacao', 'transcricao'];
 let palavraEscolhida = '';
 let letrasAdivinhadas = [];
 let letrasErradas = [];
