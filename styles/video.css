@@ -9,31 +9,32 @@
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
+    --textcolor: #646464;
 }
 
 html a {
     text-decoration: none;
 }
 
-* {
-    /* reset do CSS */
-    font-family: "Inter", sans-serif;
-    /* font-family: 'Righteous', sans-serif; */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-/* Fontes alternativas para textos menores, deixar p dps se quisermos usar*/
+/* Fonte alternativa para textos menores, deixar p dps se quisermos usar*/
 
 /* font-family: "Noto Sans Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal; */
 
-  /* Navbar */
+* {
+    /* reset do CSS */
+    font-family: "Righteous", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: repeat-x;
+  }
 
-  .navbar {
+/* Navbar */
+
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -61,7 +62,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4.5rem;  /* aumentei a imagem de 2.5 pra 4.5 */
+    height: 2.5rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -110,16 +111,11 @@ html a {
     font-weight: 400;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar nav ul a:hover {
     color: #ffffff;
-}
-
-.maincontainer{
-    display: block;
-    margin-inline: auto;
-    max-width: 1366px;
 }
 
 body{
@@ -145,7 +141,6 @@ section{
     font-size: 5rem;
     color: var(--purplebg);
     padding-top: 1rem;
-    font-family: 'Righteous', sans-serif;
 }
 
 .flexcontainer{
@@ -158,19 +153,16 @@ iframe{
     display: block;
     width: 960px;
     height: 540px;
-    filter: drop-shadow(0px 0px 15px #0000009d);
 }
 
 .content h2{
     color: var(--textyellow);
     font-size: 2.5rem;
     margin-top: 1rem;
-    font-family: 'Righteous', sans-serif;
 }
 
 .content h3{
     padding-bottom: 2rem;
-    font-family: 'Righteous', sans-serif;
 }
 
 .desc {
@@ -179,6 +171,10 @@ iframe{
     padding: 1.25rem;
     border-radius: 1rem;
     
+}
+
+.desc p{
+    font-family: "Noto Sans Display", sans-serif;
 }
 
 /* OOOOO DIFICULDADE P FZR ESSES BOTAO */
@@ -195,8 +191,9 @@ button.proximo, button.anterior {
     background-color: var(--purplebg);
     color: white;
     border: none;
-    padding: 0.5rem 4rem;
+    padding: 1rem 2rem;
     font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -223,3 +220,47 @@ button.proximo {
 button.anterior {
     background: linear-gradient(90deg, rgba(255,25,196,1) 0%, rgba(169,30,219,1) 100%);
 }
+
+.top-buttons {
+    position: absolute; /* Permite posicionamento livre */
+    top:  9rem; /* Distância do topo */
+    right: 10.5rem; /* Alinhamento à direita */
+    display: flex;
+    gap: 30px;
+  }
+  
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px; /* Deixa as bordas um pouco arredondadas */
+    font-size: 1rem; /* Tamanho da fonte um pouco maior */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: 100px; /* Largura mínima para os botões */
+  }
+
+.btn {
+    background-color: var(--imgcardpurple); /* Cor padrão escura */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px 10px 10px 10px; /* Bordas arredondadas apenas no topo */
+}
+
+/* Botão ativo - quando está selecionado */
+.btn.active {
+    background-color: var(--textyellow); /* Cor amarela para o botão ativo */
+    color: white;
+}
+
+/* Efeito de hover para botões inativos */
+.btn:hover {
+    opacity: 0.8;
+}
+  
+.btn:hover {
+    opacity: 0.9; /* Efeito de hover */
+    transform: scale(1.02); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+  }
+  

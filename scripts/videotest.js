@@ -2,106 +2,58 @@
 const videos = [
     {
         titulo: "Introdução à Genética",
-        duracao: "7:15",
+        duracao: "10:05",
         descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
         src: "https://www.youtube.com/embed/ipSpg8IjfaM?si=xsJERTG-JCECOD-z"
     },
     {
-        titulo: "O que são os genes?",
-        duracao: "4:39",
-        descricao: "Entenda o que são os genes e suas estruturas.",
+        titulo: "O que é o GENE?",
+        duracao: "12:30",
+        descricao: "Entenda o que é o DNA, sua estrutura e função no organismo.",
         src: "https://www.youtube.com/embed/E6DPIgLqdCo?si=h5t9BB8oYT2wPShP"
     },
     {
-        titulo: "Conceitos na área da genética!",
-        duracao: "16:11",
-        descricao: "Explore os conceitos básicos da genética e como são aplicados.",
+        titulo: "Mutação Genética",
+        duracao: "8:45",
+        descricao: "Explore as mutações genéticas e como elas podem afetar os seres vivos.",
         src: "https://www.youtube.com/embed/Mh8jpGeEDLw?si=z3Vft1jMsTXEwW1i"
     },
     {
-        titulo: "1ª Lei de Mendel",
-        duracao: "6:42",
-        descricao: "Este vídeo apresenta a primeira lei de Mendel.",
+        titulo: "1° Lei de Mendel de um jeito fácil e bem objetivo.",
+        duracao: "6:41",
+        descricao: "Entenda a 1ª Lei de Mendel: alelos se separam na formação dos gametas.",
         src: "https://www.youtube.com/embed/bxTsEeQ2amE?si=adloyKKq-A0xsiwx"
     },
     {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
+        titulo: "Mutações Gênicas",
+        duracao: "15:41",
+        descricao: "Aula sobre mutações gênicas, explorando tipos, causas e efeitos nas características genéticas.",
         src: "https://www.youtube.com/embed/m-9ONfsBSYE?si=qiMn2G-i7CJiSYro"
     },
     {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
+        titulo: "2° Lei de Mendel",
+        duracao: "49:54",
+        descricao: "Explicação da 2ª Lei de Mendel: a segregação independente dos alelos.",
         src: "https://www.youtube.com/embed/CVqfMN0ypoQ?si=hO38gTRr76ydMNVE"
     },
     {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
+        titulo: "Hereditariedade",
+        duracao: "10:20",
+        descricao: "Explique o conceito de hereditariedade e como características são transmitidas de pais para filhos.",
         src: "https://www.youtube.com/embed/22cQBJv0Cas?si=BDMgPKbTNHoavM9k"
     },
     {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
+        titulo: "Mapas Genéticos",
+        duracao: "10:32",
+        descricao: "Introdução aos mapas genéticos e como eles mostram a localização dos genes nos cromossomos.",
         src: "https://www.youtube.com/embed/F6XXUuUYyow?si=PYIIAr-L4A6SoK7R"
     },
     {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
+        titulo: "Resumão de Genética: Principais Conceitos",
+        duracao: "9:44",
+        descricao: "Resumo dos principais conceitos de genética.",
         src: "https://www.youtube.com/embed/YjwYJHqxwFY?si=hjA6Df8GvGirdpb4"
     },
-    {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
-        src: "https://www.youtube.com/embed/yUPy5yh-2jI?si=eK9USp7KtuwFyk47"
-    },
-    {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
-        src: "https://www.youtube.com/embed/b0cZLgTA7hs?si=Ra35Gi8RLO4CSnhz"
-    },
-    {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
-        src: "https://www.youtube.com/embed/Mz63cYySbc4?si=XRgL6Y-NdWMpt7P6"
-    },
-    {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
-        src: "https://www.youtube.com/embed/U1AthDBSMBk?si=5TKS9ClcZGc6VKra"
-    },
-    {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
-        src: "https://www.youtube.com/embed/yxm1X__yDRE?si=ikFseWybG8vP0Aiw"
-    },
-    {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
-        src: "https://www.youtube.com/embed/9w9PYPMB9Fo?si=AJ7TeehhpGCqpzz_"
-    },
-    {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
-        src: "https://www.youtube.com/embed/lGG1fJCN-Gg?si=wg_Sg8gDyj8yDi9O"
-    },
-    {
-        titulo: "Introdução à Genética",
-        duracao: "10:05",
-        descricao: "Este vídeo apresenta os conceitos básicos de genética, incluindo genes e hereditariedade.",
-        src: "https://www.youtube.com/embed/lGG1fJCN-Gg?si=P3KbcFLXq6lCqv_A"
-    }
 ];
 
 let videoIndex = 0;
@@ -137,3 +89,20 @@ document.querySelector(".anterior").addEventListener("click", () => {
         atualizarVideo();
     }
 });
+
+// botões 
+
+const buttons = document.querySelectorAll('.btn');
+
+// Adiciona um evento de clique a cada botão
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Itera sobre todos os botões e remove a classe 'active'
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        // Adiciona a classe 'active' ao botão que foi clicado
+        button.classList.add('active');
+    });
+});
+
+
