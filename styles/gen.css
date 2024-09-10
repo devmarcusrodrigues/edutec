@@ -8,6 +8,7 @@
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
+    --bg-desktop: url(../../img/pattern-background-desktop-light.svg);
 }
 
 html a {
@@ -206,7 +207,8 @@ html a {
 
 .area_tipos{
     background-color: var(--purplebg);
-    padding-bottom: 6rem;
+    padding: 4rem 2rem 6rem 2rem; /* Ajuste geral de padding */
+    text-align: center;
 }
 
 .area_tipos h4{
@@ -236,8 +238,9 @@ html a {
   
   .tipos {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    gap: 3rem; /* Mais espaçamento entre os blocos */
+    padding-top: 2rem;
   }
   
   .tipo {
@@ -342,19 +345,25 @@ span{
     font-family: "Righteous", sans-serif;
 }
 
+
 h4 span{
     font-family: "Righteous", sans-serif;
 }
 
 .haploide p, .diploide p{
-    margin-inline: 4rem;
+    margin-inline: auto; /* Centralização */
     background-color: var(--textyellow);
     border-radius: 1.5rem;
     height: fit-content;
-
+    max-width: 800px;
+    padding: 2rem;
     padding-inline: 2rem;
     padding-block: 2rem;
     
+}
+
+.cells .diploide {
+    margin-top: 4rem;
 }
 
 .cells p{
@@ -403,7 +412,9 @@ h4 span{
 
 .aplicacoes{
     padding: 3rem;
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-desktop);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .aplicacoes h3{
