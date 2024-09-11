@@ -1,4 +1,4 @@
-const palavras = ['cromossomo', 'genomica', 'mendel', 'alelos', 'genes', 'genetica', 'molecular', 'populacional'];
+const palavras = ['adenina', 'citosina', 'guanina', 'timina', 'helice', 'ribossomo', 'replicacao', 'transcricao'];
 let palavraEscolhida = '';
 let letrasAdivinhadas = [];
 let letrasErradas = [];
@@ -23,14 +23,14 @@ const fecharRegras = document.querySelector('#popup-regras .fechar');
 
 // Dicas
 const dicas = {
-    cromossomo: "Estrutura em forma de bastão composta por DNA e proteínas, que carrega os genes.",
-    genomica: "Estudo do genoma.",
-    mendel: "Pai da genética.",
-    alelos: "Versões alternativas de um mesmo gene que podem determinar características diferentes.",
-    genes: "Unidades de hereditariedade.",
-    genetica: "Ciência dos genes.",
-    molecular: "Genética que estuda a hereditariedade",
-    populacional: "Genética que estuda a distribuição e a mudança de frequências alélicas"
+    adenina: "Uma das quatro bases nitrogenadas do DNA, representada pela letra A.",
+    citosina: "Base nitrogenada do DNA, representada pela letra C.",
+    guanina: "Base nitrogenada do DNA, representada pela letra G.",
+    timina: "Base nitrogenada do DNA, representada pela letra T.",
+    helice: "Estrutura em espiral do DNA.",
+    ribossomo: "Ciência dos genesEstrutura celular onde ocorre a síntese de proteínas, usando informações do RNA mensageiro.",
+    replicacao: "Cópia do DNA.",
+    transcricao: "Processo de copiar informação do DNA para RNA."
 };
 
 // iniciar o jogo
