@@ -107,6 +107,11 @@ html a {
 
 body{
     background-color: var(--solidbgcolor);
+    cursor: url('./img/cursor.png'), auto; /* Substitua 'caminho/para/imagem.png' pela URL da sua imagem personalizada */
+}
+
+.custom-cursor {
+    cursor: url('./img/cursor.png'), auto;
 }
 /* Landing */
 
@@ -219,4 +224,17 @@ body{
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     margin-top: 1rem; /* Espaço entre as linhas de texto */
+}
+
+footer{
+    display: block;
+    
+    background-color: var(--solidbgcolor);
+    padding-block: 2rem;
+    margin-inline: auto;
+}
+
+footer p{
+    text-align: center;
+    color: var(--rosio);
 }
