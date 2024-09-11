@@ -8,6 +8,8 @@
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
+    --bg-desktop: url(../../img/pattern-background-desktop-light.svg);
+    --bg-mobile: url(../../img/pattern-background-mobile-light.svg);
 }
 
 html a {
@@ -138,7 +140,9 @@ html a {
 }
 
 .bosta763{
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 4rem;
     padding-bottom: 3rem;
 }
@@ -299,7 +303,10 @@ font-size: 1.375rem;
 
 .rep_transc{
     padding: 3rem;
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-desktop);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .rep_transc h3{
