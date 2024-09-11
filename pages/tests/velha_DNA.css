@@ -182,14 +182,15 @@ main {
 
 .popup-conteudo {
     background-color: #fff;
-    color: #000;
+    color: var(--purplebg);
     margin: 15% auto;
-    padding: 20px;
     border-radius: 10px;
-    width: 80%;
     max-width: 400px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px; /* Aumentar padding para dar mais espaçamento interno */
+    width: 80%; /* Aumentar largura para dar mais espaço ao conteúdo */
+    line-height: 1.6; /* Aumentar o espaçamento entre linhas */
 }
 
 .fechar {
