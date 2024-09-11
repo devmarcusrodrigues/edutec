@@ -107,6 +107,11 @@ html a {
 
 body{
     background-color: var(--solidbgcolor);
+    cursor: url('./img/cursor.png'), auto; /* Substitua 'caminho/para/imagem.png' pela URL da sua imagem personalizada */
+}
+
+.custom-cursor {
+    cursor: url('./img/cursor.png'), auto;
 }
 /* Landing */
 
