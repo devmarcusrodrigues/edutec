@@ -261,10 +261,15 @@ html a {
     background-color: var(--textyellow);
     border-radius: 1.5rem;
     height: fit-content;
-
+    max-width: 800px;
+    padding: 2rem;
     padding-inline: 2rem;
     padding-block: 2rem;
 
+}
+.funcao h4 span{
+    color: var(--rosio);
+    font-family: 'Righteous', sans-serif ;
 }
 
 .funcao p{

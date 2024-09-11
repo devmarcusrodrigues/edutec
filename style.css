@@ -220,3 +220,16 @@ body{
     font-weight: 400;
     margin-top: 1rem; /* Espaço entre as linhas de texto */
 }
+
+footer{
+    display: block;
+    
+    background-color: var(--solidbgcolor);
+    padding-block: 2rem;
+    margin-inline: auto;
+}
+
+footer p{
+    text-align: center;
+    color: var(--rosio);
+}
