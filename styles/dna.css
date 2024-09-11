@@ -206,44 +206,37 @@ html a {
     margin-top: 4rem;
 }
 
-.estrutura_dna{
-    display: inline-block;
+.estrutura_dna {
+    background: var(--purplebg);
     padding: 4rem;
-    background-color: var(--purplebg);
     margin-inline: auto;
-
-    height: 100%;
-    width: 100%;
+    text-align: center; /* Centraliza o texto */
 }
 
-.estrutura_dna h4{
+.estrutura_dna h4 {
     color: var(--rosio);
-
     font-size: 2.5rem;
     padding-block: 2rem;
     font-family: 'Righteous', sans-serif;
-    width: fit-content;
+    margin-bottom: 2rem; /* Adiciona espaço entre o título e o texto */
 }
 
-.estrutura_dna p{
 
+.estrutura_dna p {
     font-weight: 200;
     font-style: normal;
-
     color: #fff;
-    float: left;
-
-    height: fit-content;
-    width: 50%;
-
+    margin-bottom: 2rem; /* Adiciona espaço entre o texto e a imagem */
 }
 
-.estrutura_dna img{
-    float: right;
+.estrutura_dna img {
+    max-width: 100%; /* Ajusta a imagem para não exceder o container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
 }
-
 .funcao{
-    background-color: var(--purplebg);
+    background: var(--purplebg) ;
     padding-bottom: 5rem;
     float: center;
 }
