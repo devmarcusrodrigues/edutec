@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+
+:root{
+    --purplebg: #281448;
+    --textyellow: #FCB850;
+    --imgcardpurple: #1C0E34;
+    --rosio: #D6008F;
+    --solidbgcolor: #EAE8ED;
+    --solidtypecolor: #F6EAF9;
+}
+
+html a {
+    text-decoration: none;
+    
+}
+
+* {
+    /* reset do CSS */
+    font-family: "Poppins", sans-serif;
+    /* font-family: 'Righteous', sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Fontes alternativas para textos menores, deixar p dps se quisermos usar*/
+
+/* font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+  /* Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(90deg, rgba(169,30,219,1) 0%, rgba(255,25,196,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav .logo img {
+    height: 4rem;  /* aumentei a imagem de 2.5 pra 4 */
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar nav .logo img:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem; /* gap pros links */
+    position: relative;
+}
+
+.navbar nav ul li {
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.navbar nav ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    filter: blur(8px);
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.navbar nav ul li:hover::before {
+    opacity: 1;
+    filter: blur(12px);
+}
+
+.navbar nav ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar nav ul a:hover {
+    color: #ffffff;
+}
+
+.maincontainer{
+    display: block;
+    margin-inline: auto;
+    max-width: 1366px;
+}
+
+main{
+    padding-block: 6rem;
+    background-color: var(--purplebg);
+}
+
+.jogo-da-forca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #EFE7DA;
+    font-family: 'Righteous', sans-serif; 
+}
+
+#container-palavra {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    margin: 1rem 0;
+}
+
+.container-letras {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+}
+
+.container-letras button {
+    background-color: var(--rosio);
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.container-letras button:hover {
+    background-color: var(--textyellow);
+}
+
+#botao-reiniciar {
+    margin-top: 1rem;
+    background-color: var(--rosio);
+    color: white;
+    font-size: 1.25rem;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botao-reiniciar:hover {
+    background-color: var(--textyellow);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-conteudo {
+    background-color: #fff;
+    color: #000;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.fechar {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: red;
+}

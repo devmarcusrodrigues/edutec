@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
+
 :root{
     --purplebg: #281448;
     --textyellow: #FCB850;
@@ -7,32 +8,34 @@
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
-    --textcolor: #646464;
+    --bg-desktop: url(../../img/pattern-background-desktop-light.svg);
+    --bg-mobile: url(../../img/pattern-background-mobile-light.svg);
 }
 
 html a {
     text-decoration: none;
 }
 
-/* Fonte alternativa para textos menores, deixar p dps se quisermos usar*/
+* {
+    /* reset do CSS */
+    font-family: "Poppins", sans-serif;
+    /* font-family: 'Righteous', sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Fontes alternativas para textos menores, deixar p dps se quisermos usar*/
 
 /* font-family: "Noto Sans Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal; */
+  
 
-* {
-    /* reset do CSS */
-    font-family: "Righteous", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-repeat: repeat-x;
-  }
+  /* Navbar */
 
-/* Navbar */
-
-.navbar {
+  .navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -60,7 +63,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 2.5rem;
+    height: 4rem;  /* aumentei a imagem de 2.5 pra 4.5 */
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -109,17 +112,22 @@ html a {
     font-weight: 400;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
-    font-family: 'Poppins', sans-serif;
 }
 
 .navbar nav ul a:hover {
     color: #ffffff;
 }
 
+.maincontainer{
+    display: block;
+    margin-inline: auto;
+    max-width: 1366px;
+}
 
 .bosta763{
-    background-color: var(--solidbgcolor);
-    margin-top: 4rem;
+    background: var(--solidbgcolor) var(--bg-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .degrade{
@@ -138,12 +146,14 @@ html a {
     color: #fff;
     filter: drop-shadow(0px 20px 10px #00000086);
     text-align: center;
+    font-family: "Righteous", sans-serif;
 
 }
 
 .title h1 span{
     color: var(--rosio);
     text-align: center;
+    font-family: "Righteous", sans-serif;
 }
  
 /* reutilizavel - infocard */
@@ -176,6 +186,7 @@ html a {
 .info h3{
     font-size: 3rem;
     padding-bottom: 2.5rem;
+    font-family: "Righteous", sans-serif;
 }
 
 .info li{
@@ -186,7 +197,6 @@ html a {
 
     font-size: 1rem;
 
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -199,8 +209,10 @@ html a {
 /* -------------------------------------------------------------- */
 
 .area_tipos{
-    background-color: var(--purplebg);
-    padding-bottom: 6rem;
+    background: var(--purplebg);
+    padding: 4rem 2rem 6rem 2rem; /* Ajuste geral de padding */
+    text-align: center;
+
 }
 
 .area_tipos h4{
@@ -210,10 +222,11 @@ html a {
 
     padding-top: 2rem;
     padding-inline: 3rem;
+
+    font-family: "Righteous", sans-serif;
 }
 
 .area_tipos strong p{
-    font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
 
@@ -222,6 +235,83 @@ html a {
     padding-inline: 3.125rem;
     padding-bottom: 4rem;
 }
+
+.area_tipos {
+    text-align: center;
+
+  }
+
+
+.tipos {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Mais espaçamento entre os blocos */
+    padding-top: 2rem;
+}
+
+.tipo {
+    padding: 20px;
+    background-color: var(--solidbgcolor);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+.tipo:hover {
+    background-color: var(--textyellow);
+    color: white;
+  }
+  
+  /* Estilos para os modais */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.modal-content {
+    background-color: var(--solidbgcolor);
+    margin: 15% auto;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 30px; /* Aumentar padding para dar mais espaçamento interno */
+    width: 60%; /* Aumentar largura para dar mais espaço ao conteúdo */
+    line-height: 1.6; /* Aumentar o espaçamento entre linhas */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: var(--purplebg);
+}
+
+.modal-content p {
+    margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+}
+  
+.fechar {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+button {
+    padding: 10px 20px;
+    background-color: var(--rosio);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: var(--purplebg);
+  }
 
 .tipos{
     display: flex;
@@ -240,13 +330,14 @@ html a {
     width: 9rem;
 
     border-radius: 1.25rem;
+    display: flex; /* Para usar flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
 .tipos div p{
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
     font-style: normal;
-
+    font-weight: 500;
     color: var(--rosio);
 
     text-align: center;
@@ -259,7 +350,7 @@ span{
 }
 
 .cells{
-    background-color: var(--purplebg);
+    background: var(--purplebg);
     padding-bottom: 5rem;
     float: center;
 }
@@ -269,23 +360,33 @@ span{
     color: #fff;
     margin-inline: 3.125rem;
     padding-block: 4rem;
+    font-family: "Righteous", sans-serif;
+}
+
+
+h4 span{
+    font-family: "Righteous", sans-serif;
 }
 
 .haploide p, .diploide p{
-    margin-inline: 4rem;
+    margin-inline: auto; /* Centralização */
     background-color: var(--textyellow);
     border-radius: 1.5rem;
     height: fit-content;
-
+    max-width: 800px;
+    padding: 2rem;
     padding-inline: 2rem;
     padding-block: 2rem;
     
 }
 
+.cells .diploide {
+    margin-top: 4rem;
+}
+
 .cells p{
     color: #fff;
 
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 
@@ -300,7 +401,6 @@ span{
 .cells p span{
     color:var(--rosio);
 
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 
@@ -330,14 +430,16 @@ span{
 
 .aplicacoes{
     padding: 3rem;
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-desktop);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .aplicacoes h3{
     color: var(--rosio);
     font-size: 2.813rem;
     padding-block: 4rem;
-
+    font-family: "Righteous", sans-serif;
 }
 
 /* reutilizavel tb isso abaixo */
@@ -357,7 +459,6 @@ span{
 .primeira-parte p, .segunda-parte p{
     color: var(--textcolor);
 
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 

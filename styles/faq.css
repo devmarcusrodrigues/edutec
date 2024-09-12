@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
+
 :root{
     --purplebg: #281448;
     --textyellow: #FCB850;
@@ -7,32 +8,31 @@
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
-    --textcolor: #646464;
 }
 
 html a {
     text-decoration: none;
 }
 
-/* Fonte alternativa para textos menores, deixar p dps se quisermos usar*/
+* {
+    /* reset do CSS */
+    font-family: "Poppins", sans-serif;
+    /* font-family: 'Righteous', sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Fontes alternativas para textos menores, deixar p dps se quisermos usar*/
 
 /* font-family: "Noto Sans Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal; */
 
-* {
-    /* reset do CSS */
-    font-family: "Righteous", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-repeat: repeat-x;
-  }
+  /* Navbar */
 
-/* Navbar */
-
-.navbar {
+  .navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -60,7 +60,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4rem;
+    height: 4rem;  /* aumentei a imagem de 2.5 pra 4.5 */
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -109,13 +109,17 @@ html a {
     font-weight: 400;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
-    font-family: 'Poppins', sans-serif;
 }
 
 .navbar nav ul a:hover {
     color: #ffffff;
 }
 
+.maincontainer{
+    display: block;
+    margin-inline: auto;
+    max-width: 1366px;
+}
 
 body{
     padding-top: 5rem;
@@ -124,8 +128,9 @@ body{
 
 h1{
     color: var(--textyellow);
-    filter: drop-shadow(0px 5px 2.5px #00000091);
+    filter: drop-shadow(0px 5px 2.5px #00000056);
     text-align: center;
+    font-family: "Righteous", sans-serif;
 
     font-size: 5rem;
 
@@ -136,7 +141,8 @@ h1{
 
 h2{
     color: var(--purplebg);
-    filter: drop-shadow(0px 5px 2.5px #00000091);
+    filter: drop-shadow(0px 5px 2.5px #00000056);
+    font-family: "Righteous", sans-serif;
 
     font-size: 3rem;
     padding-block: 5rem;
@@ -145,19 +151,24 @@ h2{
 }
 
 p{
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-
     color: var(--textcolor);
-
     font-size: 1rem;
-
     text-align: center;
 }
 
-ul{
-    text-align: center;
+.perguntas p {
+    margin: 20px 40px; /* Adiciona margens maiores à esquerda e à direita */
+    padding: 15px;
+    background-color: white; /* Cor de fundo clara para destacar o texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px var(--purplebg); /* Leve sombra para destacar */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.perguntas div{
+    margin-inline: 3rem;
 }
 
 section{
@@ -166,6 +177,7 @@ section{
 
 h3{
     font-size: 2.5rem;
+    filter: drop-shadow(0px 5px 2.5px #00000056);
 }
 
 .about{
@@ -190,15 +202,16 @@ h3{
     align-items: center;
     justify-content: center;
     color: var(--rosio);
-    filter: drop-shadow(0px 5px 2.5px #00000091);
+    filter: drop-shadow(0px 5px 2.5px #00000056);
     padding-block: 2.5rem;
+    font-family: 'Righteous', sans-serif;
 }
 
 .about span{
+    font-family: 'Righteous', sans-serif;
     color: #fff;
     padding-left: 0.75rem;
 }
-
 
 @keyframes glow {
     0% {
@@ -260,6 +273,7 @@ h3{
 .profile img {
     padding-inline: 2rem;
     padding-block: 2.5rem;
+    border-radius: 999px;
 }
 
 .profile a {
@@ -272,19 +286,16 @@ h3{
 }
 
 .profile strong {
-    padding-block: 6rem;
-    padding-inline: 2rem;
-}
-
-.profile img{
-    border-radius: 100rem;
+    padding-top: 6rem;
+    gap: 1rem;
+    font-family: "Righteous", sans-serif;
 }
 
 .card_pessoas p {
     color: #fff;
-    font-family: "Righteous", sans-serif;
     padding-top: 3rem;
     font-size: 1.75rem;
+    font-family: "Righteous", sans-serif;
 }
 .bug_report{
     display: flex;
@@ -310,3 +321,4 @@ footer p{
     color: var(--rosio);
     font-family: "Righteous", sans-serif;
 }
+
