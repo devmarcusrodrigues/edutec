@@ -283,27 +283,35 @@ button.anterior {
 .lista details {
     font-size: x-large;
     color: var(--purplebg);
-    transition: all 0.3s ease-in-out;
+    transition: max-height 0.5s ease-in-out, padding 0.3s ease;
     overflow: hidden;
     border-radius: 0.5rem;
-    padding-block: 0.75rem;
-    padding-inline: 0.25rem;
-    margin-block: 0.75rem;
-    gap: 2rem0;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    margin-block: 1rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    max-height: 3rem;
 }
 
 .lista details[open] {
     background-color: var(--rosio);
+    max-height: 50rem;
 }
 
 .lista details summary {
     cursor: pointer;
     padding: 0.5rem;
     transition: color 0.3s ease;
+    font-size: 1.25rem;
+}
+
+.lista details summary:hover {
+    color: var(--rosio);
+    text-decoration: underline;
 }
 
 .lista details[open] summary {
-    color: var(--solidtypecolor);;
+    color: var(--textyellow);
 }
 
 .lista details button {
@@ -318,10 +326,16 @@ button.anterior {
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.4s ease, transform 0.4s ease;
-    margin-bottom: 6px; /* Adiciona espaço entre os botões */
+    margin-bottom: 6px;
+    width: 100%;
+    text-align: left;
 }
 
 .lista details[open] button {
     opacity: 1;
     transform: translateY(0);
+}
+
+.lista details[open] summary ~ button {
+    transition-delay: 0.1s;
 }
