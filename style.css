@@ -200,13 +200,11 @@ body{
     font-family: "Righteous", sans-serif;
 }
 
-/* Descrição do Vídeo */
-
 .descricaovideo .video {
     background-color: var(--purplebg);
     text-align: center;
-    margin-top: 2rem; /* Espaço acima do texto */
-    margin: ;
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 .descricaovideo .video a {

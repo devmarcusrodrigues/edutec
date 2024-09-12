@@ -175,7 +175,7 @@ html a {
     height: fit-content;
     padding: 1rem;
     padding-right: -2rem;
-
+    z-index: 2;
 }
 
 .info h3, li{
@@ -271,7 +271,7 @@ html a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 3;
   }
   
 .modal-content {
@@ -444,31 +444,40 @@ h4 span{
 
 /* reutilizavel tb isso abaixo */
 
-.primeira-parte{
+.container {
     display: flex;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
 }
 
-.segunda-parte{
+.primeira-parte, .segunda-parte {
     display: flex;
-    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
     width: 100%;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
-.primeira-parte p, .segunda-parte p{
+.primeira-parte img, .segunda-parte img {
+    max-width: 75%;
+    height: auto;
+}
+
+.primeira-parte p, .segunda-parte p {
     color: var(--textcolor);
-
     font-weight: 300;
     font-style: normal;
-
     padding: 2rem;
-    padding-block: 6rem;
+    flex: 1;
 }
 
-.segunda-parte p{
+.segunda-parte p {
     text-align: right;
-    float: right;
 }
 
 footer{
