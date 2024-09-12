@@ -125,9 +125,7 @@ html a {
 }
 
 .bosta763{
-    background: var(--solidbgcolor) var(--bg-mobile);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: var(--solidbgcolor);
 }
 
 .degrade{

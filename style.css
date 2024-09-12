@@ -113,6 +113,32 @@ body{
 .custom-cursor {
     cursor: url('./img/cursor.png'), auto;
 }
+
+
+@keyframes slideUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.maincontainer .landing .title {
+    font-size: 9.375rem;
+    font-family: 'Righteous', sans-serif;
+    color: var(--textyellow);
+    text-align: center;
+    animation: slideUpDown 2s ease-in-out infinite;
+    display: inline-block;
+}
+
+.maincontainer .landing .subtitle{
+    animation: slideUpDown 2s ease-in-out infinite;
+}
 /* Landing */
 
 .landing {
