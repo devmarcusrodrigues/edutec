@@ -132,6 +132,12 @@ html a {
     background-repeat: repeat-x;
 } */
 
+.maincontainer{
+    display: block;
+    margin-inline: auto;
+    max-width: 1366px;
+}
+
 .degrade{
     width: auto;
     height: 24rem;
@@ -399,7 +405,7 @@ footer p{
     padding-block: 2rem;
 }
 
-.diff .containerlol p, .containerlol li{
+.diff .containerlol p, .containerlol ul li{
     color: #fff;
     font-weight: 300;
     font-style: normal;
