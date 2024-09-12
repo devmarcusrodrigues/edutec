@@ -144,9 +144,22 @@ function confirmarVoltarInicio() {
     }
 }
 
+// Atualização para prevenir o comportamento padrão do link "Voltar ao Início"
+document.getElementById('botao-voltar').addEventListener('click', function(event) {
+    event.preventDefault(); // Impede a navegação padrão do link
+    confirmarVoltarInicio(); // Executa a função de confirmação
+});
+
+// Atualização para adicionar a mesma função de confirmação à logo
+document.querySelector('.assunto_icone a').addEventListener('click', function(event) {
+    event.preventDefault(); // Impede a navegação padrão do link
+    if (confirm("Tem certeza de que deseja voltar ao início? Todos os dados serão perdidos.")) {
+        window.location.href = "../../pages/quiz.html"; // Mude este link para o URL da página inicial
+    }
+});
+
 botaoReiniciar.addEventListener('click', iniciarJogo);
 document.getElementById('botao-dica').addEventListener('click', mostrarDica);
 botaoRegras.addEventListener('click', mostrarRegras);
-document.getElementById('botao-voltar').addEventListener('click', confirmarVoltarInicio);
 
 iniciarJogo();

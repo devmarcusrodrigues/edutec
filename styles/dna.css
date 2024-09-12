@@ -140,9 +140,7 @@ html a {
 }
 
 .bosta763{
-    background: var(--solidbgcolor) var(--bg-mobile);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: var(--solidbgcolor);
     margin-top: 4rem;
     padding-bottom: 3rem;
 }
