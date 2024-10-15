@@ -1,36 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
-:root{
+:root {
     --purplebg: #281448;
     --textyellow: #FCB850;
     --imgcardpurple: #1C0E34;
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
-    --textcolor: #646464;
+    --cortexto: #3d3d3d;
+
+    --landingpng: url(/img/background.png);
+    --bggen: url(/img/bggen.png);
+    --bgdna: url(/img/bgdna.png);
 }
+
+:root.dark-mode {
+    --purplebg: #11071f;
+    --textyellow: #FCB850;
+    --imgcardpurple: #0c041a;
+    --rosio: #D6008F;
+    --solidbgcolor: #131114;
+    --solidtypecolor: #F6EAF9;
+    --cortexto: #F6EAF9;
+
+    --landingpng: url(/img/background-dark.png);
+    --bggen: url(/img/bggen-dark.png);
+    --bgdna: url(/img/bgdna-dark.png);
+}
+
 
 html a {
     text-decoration: none;
 }
 
-/* Fonte alternativa para textos menores, deixar p dps se quisermos usar*/
-
-/* font-family: "Noto Sans Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal; */
-
 * {
-    /* reset do CSS */
-    font-family: "Righteous", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-repeat: repeat-x;
-  }
-
-/* Navbar */
+    font-family: 'Poppins', sans-serif;
+}
 
 .navbar {
     position: fixed;
@@ -60,7 +68,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4rem;  
+    height: 2.5rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -112,12 +120,77 @@ html a {
     font-family: 'Poppins', sans-serif;
 }
 
+.tema{
+    height: 2rem;
+    width: 2rem;
+}
+
 .navbar nav ul a:hover {
     color: #ffffff;
 }
 
-body{
-    padding-top: 5rem;
+/* Modo escuro */
+
+.navbar.dark-mode {
+    background: linear-gradient(90deg, rgba(28, 14, 52, 1) 0%, rgba(70, 40, 119, 1) 100%);
+}
+
+.navbar.dark-mode nav ul a {
+    color: #f0f0f0;
+}
+
+.temacontainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #281448;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+body.dark-mode {
     background-color: var(--solidbgcolor);
 }
 
@@ -129,6 +202,10 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.dark-mode h1{
+    color: var(--rosio);
 }
 
 h1{
