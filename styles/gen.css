@@ -375,7 +375,7 @@ body.dark-mode {
 
 .modal-content p {
     margin-bottom: 30px; /* Espaço abaixo do parágrafo */
-    color: var(--solidtypecolor)
+    color: var(--cortexto)
 }
   
 .fechar {
