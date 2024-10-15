@@ -405,3 +405,25 @@ h4{
 .dark-mode h4{
     color: var(--solidtypecolor);
 }
+
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--rosio);
+    color: white;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+}
+
+#backToTop:hover {
+    opacity: 1;
+    background-color: var(--textyellow);
+}
