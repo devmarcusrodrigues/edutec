@@ -515,6 +515,8 @@ img {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s ease;
     opacity: 0.9;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 #backToTop:hover {

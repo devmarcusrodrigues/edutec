@@ -414,13 +414,15 @@ h4{
     background-color: var(--rosio);
     color: white;
     border: none;
-    padding: 0.8rem 1rem;
+    padding: 1rem;
     border-radius: 100%;
     cursor: pointer;
     z-index: 1000;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s ease;
     opacity: 0.9;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 #backToTop:hover {
