@@ -1,38 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
-
-:root{
+:root {
     --purplebg: #281448;
     --textyellow: #FCB850;
     --imgcardpurple: #1C0E34;
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
+    --cortexto: #3d3d3d;
+
+    --landingpng: url(/img/background.png);
+    --bggen: url(/img/bggen.png);
+    --bgdna: url(/img/bgdna.png);
 }
+
+:root.dark-mode {
+    --purplebg: #11071f;
+    --textyellow: #FCB850;
+    --imgcardpurple: #0c041a;
+    --rosio: #D6008F;
+    --solidbgcolor: #131114;
+    --solidtypecolor: #F6EAF9;
+    --cortexto: #F6EAF9;
+
+    --landingpng: url(/img/background-dark.png);
+    --bggen: url(/img/bggen-dark.png);
+    --bgdna: url(/img/bgdna-dark.png);
+}
+
 
 html a {
     text-decoration: none;
 }
 
 * {
-    /* reset do CSS */
-    font-family: "Poppins", sans-serif;
-    /* font-family: 'Righteous', sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    font-family: 'Poppins', sans-serif;
+}
 
-/* Fontes alternativas para textos menores, deixar p dps se quisermos usar*/
-
-/* font-family: "Noto Sans Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal; */
-
-  /* Navbar */
-
-  .navbar {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -60,7 +68,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4rem;  /* aumentei a imagem de 2.5 pra 4.5 */
+    height: 2.5rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -109,10 +117,81 @@ html a {
     font-weight: 400;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tema{
+    height: 2rem;
+    width: 2rem;
 }
 
 .navbar nav ul a:hover {
     color: #ffffff;
+}
+
+/* Modo escuro */
+
+.navbar.dark-mode {
+    background: linear-gradient(90deg, rgba(28, 14, 52, 1) 0%, rgba(70, 40, 119, 1) 100%);
+}
+
+.navbar.dark-mode nav ul a {
+    color: #f0f0f0;
+}
+
+.temacontainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #281448;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+body.dark-mode {
+    background-color: var(--solidbgcolor);
 }
 
 .maincontainer{
@@ -139,6 +218,10 @@ h1{
     text-align: center;
 }
 
+.dark-mode h1{
+    color: var(--solidtypecolor);
+}
+
 h2{
     color: var(--purplebg);
     filter: drop-shadow(0px 5px 2.5px #00000056);
@@ -150,21 +233,24 @@ h2{
     text-align: center;
 }
 
+.dark-mode h2{
+    color: var(--rosio);
+}
+
 p{
     font-weight: 300;
     font-style: normal;
-    color: var(--textcolor);
     font-size: 1rem;
     text-align: center;
 }
 
 .perguntas p {
-    margin: 20px 40px; /* Adiciona margens maiores à esquerda e à direita */
+    margin: 20px 40px;
     padding: 15px;
-    background-color: white; /* Cor de fundo clara para destacar o texto */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px var(--purplebg); /* Leve sombra para destacar */
-    text-align: left; /* Alinha o texto à esquerda */
+    background-color: var(--solidtypecolor);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--purplebg);
+    text-align: left;
 }
 
 .perguntas div{
@@ -304,7 +390,7 @@ h3{
 }
 
 .bug_report a{
-    color: var(--purplebg);
+    color: var(--rosio);
 }
 
 h4{
@@ -312,17 +398,98 @@ h4{
     font-size: 2rem;
 }
 
-footer{
-    display: block;
-    
-    background-color: var(--solidbgcolor);
-    padding-block: 3rem;
-    margin-inline: auto;
-}
-
-footer p{
-    text-align: center;
+.dark-mode .bug_report{
     color: var(--rosio);
-    font-family: "Righteous", sans-serif;
 }
 
+.dark-mode h4{
+    color: var(--solidtypecolor);
+}
+
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--rosio);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+#backToTop:hover {
+    opacity: 1;
+    background-color: var(--textyellow);
+}
+
+#openPopupBtn {
+    position: fixed;
+    bottom: 20px;  
+    left: 1%;     
+    background-color: var(--rosio);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+/* Estilos para o pop-up (inicialmente escondido) */
+
+#openPopupBtn {
+    position: fixed;
+    bottom: 20px;  
+    left: 20px;   
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--rosio);
+    color: var(#000);
+    border: none;
+    border-radius: 100px;
+    z-index: 10; 
+}
+
+/* Estilos para o pop-up (inicialmente escondido) */
+
+
+.popup {
+    display: none; /* O pop-up começa escondido */
+    position: fixed; /* Para que ele fique fixo na tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centralizar corretamente */
+    width: 300px; /* Largura do pop-up */
+    background-color: var(--solidtypecolor); 
+    z-index: 1000; 
+    border-radius: 10%;
+}
+
+
+/* Botão de fechar (X) */
+
+.close {
+    color: var(red) ;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}

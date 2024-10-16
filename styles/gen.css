@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
-
-:root{
+:root {
     --purplebg: #281448;
     --textyellow: #FCB850;
     --imgcardpurple: #1C0E34;
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
-    --bg-desktop: url(../../img/pattern-background-desktop-light.svg);
-    --bg-mobile: url(../../img/pattern-background-mobile-light.svg);
+    --cortexto: #3d3d3d;
+
+    --landingpng: url(/img/background.png);
+    --bggen: url(/img/bggen.png);
+    --bgdna: url(/img/bgdna.png);
+}
+
+:root.dark-mode {
+    --purplebg: #11071f;
+    --textyellow: #FCB850;
+    --imgcardpurple: #0c041a;
+    --rosio: #D6008F;
+    --solidbgcolor: #131114;
+    --solidtypecolor: #F6EAF9;
+    --cortexto: #F6EAF9;
+
+    --landingpng: url(/img/background-dark.png);
+    --bggen: url(/img/bggen-dark.png);
+    --bgdna: url(/img/bgdna-dark.png);
+
+
 }
 
 html a {
@@ -17,25 +35,13 @@ html a {
 }
 
 * {
-    /* reset do CSS */
-    font-family: "Poppins", sans-serif;
-    /* font-family: 'Righteous', sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    font-family: 'Poppins', sans-serif;
+}
 
-/* Fontes alternativas para textos menores, deixar p dps se quisermos usar*/
-
-/* font-family: "Noto Sans Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal; */
-  
-
-  /* Navbar */
-
-  .navbar {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -63,7 +69,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4rem;  /* aumentei a imagem de 2.5 pra 4.5 */
+    height: 2.5rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -112,10 +118,81 @@ html a {
     font-weight: 400;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tema{
+    height: 2rem;
+    width: 2rem;
 }
 
 .navbar nav ul a:hover {
     color: #ffffff;
+}
+
+/* Modo escuro */
+
+.navbar.dark-mode {
+    background: linear-gradient(90deg, rgba(28, 14, 52, 1) 0%, rgba(70, 40, 119, 1) 100%);
+}
+
+.navbar.dark-mode nav ul a {
+    color: #f0f0f0;
+}
+
+.temacontainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #281448;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+body.dark-mode {
+    background-color: var(--solidbgcolor);
 }
 
 .maincontainer{
@@ -125,16 +202,23 @@ html a {
 }
 
 .bosta763{
-    background: var(--solidbgcolor) var(--bg-mobile);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: var(--solidbgcolor);
 }
 
-.degrade{
-    width: auto;
+.degrade {
+    width: 100%;
     height: 24rem;
-    background-image: url(/img/bggen.png);
-    background-repeat: repeat-x;
+    background-image: var(--bggen);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+:root.dark-mode .degrade {
+    background-image: var(--bggen);
+    height: 24rem;
+    background-size: cover;
+    background-position: center;
 }
 
 .title{
@@ -175,7 +259,7 @@ html a {
     height: fit-content;
     padding: 1rem;
     padding-right: -2rem;
-
+    z-index: 2;
 }
 
 .info h3, li{
@@ -271,7 +355,7 @@ html a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 3;
   }
   
 .modal-content {
@@ -286,11 +370,12 @@ html a {
 
 .modal-content h2 {
     margin-bottom: 20px; /* Espaço abaixo do título */
-    color: var(--purplebg);
+    color: var(--rosio);
 }
 
 .modal-content p {
     margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+    color: var(--cortexto)
 }
   
 .fechar {
@@ -410,7 +495,6 @@ h4 span{
 }
 
 .text{
-    /* eu te amo ujhafsuy <3 */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -430,7 +514,7 @@ h4 span{
 
 .aplicacoes{
     padding: 3rem;
-    background: var(--solidbgcolor) var(--bg-desktop);
+    background: var(--solidbgcolor);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -444,31 +528,40 @@ h4 span{
 
 /* reutilizavel tb isso abaixo */
 
-.primeira-parte{
+.container {
     display: flex;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
 }
 
-.segunda-parte{
+.primeira-parte, .segunda-parte {
     display: flex;
-    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
     width: 100%;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
-.primeira-parte p, .segunda-parte p{
-    color: var(--textcolor);
+.primeira-parte img, .segunda-parte img {
+    max-width: 75%;
+    height: auto;
+}
 
+.primeira-parte p, .segunda-parte p {
+    color: var(--cortexto);
     font-weight: 300;
     font-style: normal;
-
     padding: 2rem;
-    padding-block: 6rem;
+    flex: 1;
 }
 
-.segunda-parte p{
+.segunda-parte p {
     text-align: right;
-    float: right;
 }
 
 footer{
@@ -481,4 +574,27 @@ footer{
 
 footer p{
     text-align: center;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--rosio);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+#backToTop:hover {
+    opacity: 1;
+    background-color: var(--textyellow);
 }

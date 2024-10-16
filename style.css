@@ -7,20 +7,38 @@
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
+    --cortexto: #3d3d3d;
+
+    --landingpng: url(/img/background.png);
+    --bggen: url(/img/bggen.png);
+    --bgdna: url(/img/bgdna.png);
 }
+
+:root.dark-mode {
+    --purplebg: #11071f;
+    --textyellow: #FCB850;
+    --imgcardpurple: #0c041a;
+    --rosio: #D6008F;
+    --solidbgcolor: #131114;
+    --solidtypecolor: #F6EAF9;
+    --cortexto: #F6EAF9;
+
+    --landingpng: url(/img/background-dark.png);
+    --bggen: url(/img/bggen-dark.png);
+    --bgdna: url(/img/bgdna-dark.png);
+}
+
 
 html a {
     text-decoration: none;
 }
 
 * {
-    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
-/* Navbar */
 
 .navbar {
     position: fixed;
@@ -50,7 +68,7 @@ html a {
 }
 
 .navbar nav .logo img {
-    height: 4rem;
+    height: 2.5rem;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -64,7 +82,7 @@ html a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem; /* gap pros links */
     position: relative;
 }
 
@@ -99,25 +117,116 @@ html a {
     font-weight: 400;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tema{
+    height: 2rem;
+    width: 2rem;
 }
 
 .navbar nav ul a:hover {
     color: #ffffff;
 }
 
-body{
-    background-color: var(--solidbgcolor);
-    cursor: url('./img/cursor.png'), auto; /* Substitua 'caminho/para/imagem.png' pela URL da sua imagem personalizada */
+/* Modo escuro */
+
+.navbar.dark-mode {
+    background: linear-gradient(90deg, rgba(28, 14, 52, 1) 0%, rgba(70, 40, 119, 1) 100%);
 }
 
-.custom-cursor {
-    cursor: url('./img/cursor.png'), auto;
+.navbar.dark-mode nav ul a {
+    color: #f0f0f0;
+}
+
+.temacontainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #281448;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+body.dark-mode {
+    background-color: var(--solidbgcolor);
+}
+
+body{
+    background-color: var(--solidbgcolor);
+}
+
+
+@keyframes slideUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.maincontainer .landing .title {
+    font-size: 9.375rem;
+    font-family: 'Righteous', sans-serif;
+    color: var(--textyellow);
+    text-align: center;
+    animation: slideUpDown 2s ease-in-out infinite;
+    display: inline-block;
+}
+
+.maincontainer .landing .subtitle{
+    animation: slideUpDown 2s ease-in-out infinite;
 }
 /* Landing */
 
 .landing {
-    background-image: url(/img/background.png);
-    background-color: var(--solidbgcolor);
+    background-image: var(--landingpng);
     margin-top: 4rem;
     padding: 11rem 0;
     text-align: center;
@@ -200,13 +309,11 @@ body{
     font-family: "Righteous", sans-serif;
 }
 
-/* Descrição do Vídeo */
-
 .descricaovideo .video {
     background-color: var(--purplebg);
     text-align: center;
-    margin-top: 2rem; /* Espaço acima do texto */
-    margin: ;
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 .descricaovideo .video a {
@@ -223,7 +330,8 @@ body{
     color: var(--textyellow);
     font-family: "Righteous", sans-serif;
     font-weight: 400;
-    margin-top: 1rem; /* Espaço entre as linhas de texto */
+    margin-top: 1rem;
+    padding-block: 2rem;
 }
 
 footer{
@@ -237,4 +345,29 @@ footer{
 footer p{
     text-align: center;
     color: var(--rosio);
+}
+
+/* botão de voltar ao topo */
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--rosio);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+#backToTop:hover {
+    opacity: 1;
+    background-color: var(--textyellow);
 }

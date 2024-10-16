@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/dna.css">
+    <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
+    <script src="../scripts/tema.js" defer></script>
+    <script src="../scripts/botaotopo.js" defer></script>
     <title>GeneSync</title>
 </head>
 <body>
@@ -18,8 +21,17 @@
                     <li><a href="/pages/genetica.html">Genética</a></li>
                     <li><a href="/pages/dna.html">DNA</a></li>
                     <li><a href="/pages/videos/video1.html">Videoaulas</a></li>
-                    <li><a href="/pages/tests/velha.html">Jogo</a></li>
+                    <li><a href="/pages/quiz.html">Jogo</a></li>
                     <li><a href="/pages/faq.html">FAQ</a></li>
+                    <li>
+                        <div class="temacontainer">
+                            <label class="switch">
+                                <input type="checkbox" id="theme-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <img class="tema" src="../../img/dark-mode.svg" alt="Tema">
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </section>
@@ -33,6 +45,8 @@
                 <div class="title">
                     <h1>DNA</h1>
                 </div>
+
+                <button id="backToTop" title="Voltar ao Topo"><img src="../img/seta.svg" alt=""></button>
     
                 <div class="infocard">
                     <div class="info">

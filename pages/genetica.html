@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- links pra style e scripts -->
     <link rel="stylesheet" href="/styles/gen.css">
+    <script src="../scripts/tema.js" defer></script>
+    <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
     <script type="module" src="../pop.js" defer></script>
+    <script src="../scripts/botaotopo.js" defer></script>
 
     <title>GeneSync</title>
 </head>
@@ -23,13 +26,22 @@
                     <li><a href="/pages/videos/video1.html">Videoaulas</a></li>
                     <li><a href="/pages/quiz.html">Jogo</a></li>
                     <li><a href="/pages/faq.html">FAQ</a></li>
+                    <li>
+                        <div class="temacontainer">
+                            <label class="switch">
+                                <input type="checkbox" id="theme-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <img class="tema" src="../../img/dark-mode.svg" alt="Tema">
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </section>
 
         <section class="bosta763">
             <div class="degrade">
-                <!-- <img src="/img/bggen.png" alt=""> --> 
+                <!-- <img src="/img/bggen.png" alt=""> -->
             </div>
 
             <!-- Isso aqui é um workaround, favor não mexer até encontrar uma solução! -->
@@ -39,7 +51,9 @@
                         Gené<span class="tica">tica</span>
                     </h1>
                 </div>
-    
+
+                <button id="backToTop" title="Voltar ao Topo"><img src="../img/seta.svg" alt=""></button>
+
                 <div class="infocard">
                     <div class="info">
                         <h3>Sobre a Genética</h3>
@@ -183,6 +197,7 @@
         <section class="cells">
             <h4>Células da <span>Genética</span></h4>
 
+<<<<<<< HEAD
             <div class="haploide">
                 <div class="text">
                     <img src="/img/haploide.png" alt="">
@@ -196,6 +211,48 @@
                     <p>
                         Além disso, é crucial na agricultura para criar culturas e animais resilientes. Além disso, desempenha um papel fundamental na conservação da biodiversidade, pesquisa científica, análises forenses e desenvolvimento de terapias genéticas avançadas, refletindo seu impacto abrangente em nossas vidas e no entendimento do mundo natural.
                     </p>
+=======
+    
+            <section class="cells">
+                <h4>Células da <span>Genética</span></h4>
+    
+                <div class="haploide">
+                    <div class="text">
+                        <img src="/img/haploide.png" alt="">
+                        <p>
+                            Células <span>haploides</span> têm metade dos cromossomos<br>das células diploides ("n" em vez de "2n"). <br> São essenciais na reprodução sexual, formando gametas por meiose,<br>que se unem na fertilização para formar organismos diploides.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="diploide">
+                    <div class="text">
+                        <img src="/img/diploide.png" alt="">
+                        <p>
+                            Células <span>diploides</span> têm pares de cromossomos ("2n")<br>e são essenciais na formação de tecidos do organismo, exceto células germinativas. <br> Na reprodução sexual, se fundem na fertilização para garantir estabilidade genética e transmissão de características hereditárias.
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="aplicacoes">
+                <h3>Aplicações da Genética</h3> 
+    
+                <div class="container">
+                    <div class="primeira-parte">
+                        <p>
+                            A genética permeia diversos aspectos da sociedade e da ciência, com aplicações que vão desde a medicina até a agricultura e a conservação da biodiversidade. Na medicina, a genética desempenha um papel fundamental no diagnóstico de doenças hereditárias, na previsão de riscos de saúde e no desenvolvimento de tratamentos personalizados.
+                        </p>
+                        <img src="/img/coolimage.png" alt="">
+                    </div>
+                    
+                    <div class="segunda-parte">
+                        <img src="/img/notsocoolimage.png" alt="">
+                        <p>
+                            Além disso, é crucial na agricultura para criar culturas e animais resilientes. Além disso, desempenha um papel fundamental na conservação da biodiversidade, pesquisa científica, análises forenses e desenvolvimento de terapias genéticas avançadas, refletindo seu impacto abrangente em nossas vidas e no entendimento do mundo natural.
+                        </p>
+                    </div>
+>>>>>>> 8173c1b97015122ff421c204062ed769bc6635fe
                 </div>
             </div>
         </section>
