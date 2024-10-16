@@ -200,7 +200,6 @@ body{
 body.dark-mode {
     background-color: var(--solidbgcolor);
     background-image: url('../img/pattern-background-desktop-dark.svg');
-
 }
 
 section{
