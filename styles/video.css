@@ -217,6 +217,7 @@ section{
 .title{
     display: flex;
     padding-top: 1rem;
+    animation: fadeInUp 1.2s ease-out; /* Animação suave ao entrar */
 }
 
 .title img{
@@ -224,11 +225,10 @@ section{
     height: 10%;
 }
 
-.title h1{
+.title h1 {
     font-size: 5rem;
     color: var(--purplebg);
-
-    padding-top: 1rem;
+    padding-top: 0.10rem;
 }
 
 .dark-mode .title h1{

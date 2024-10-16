@@ -446,8 +446,8 @@ footer p{
 footer img{
     display: block;
     margin-inline: auto;
-    height: 25%;
-    width: 25%;
+    height: 20%;
+    width: 20%;
 }
 
 .dark-mode footer img{
