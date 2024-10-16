@@ -452,3 +452,67 @@ footer img{
     opacity: 1;
     background-color: var(--textyellow);
 }
+
+#openPopupBtn {
+    position: fixed;
+    bottom: 20px;  
+    left: 1%;     
+    background-color: var(--rosio);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+/* Estilos para o pop-up (inicialmente escondido) */
+
+#openPopupBtn {
+    position: fixed;
+    bottom: 20px;  
+    left: 20px;   
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--rosio);
+    color: var(#000);
+    border: none;
+    border-radius: 100px;
+    z-index: 10; 
+}
+
+/* Estilos para o pop-up (inicialmente escondido) */
+
+
+.popup {
+    display: none; /* O pop-up começa escondido */
+    position: fixed; /* Para que ele fique fixo na tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centralizar corretamente */
+    width: 300px; /* Largura do pop-up */
+    background-color: var(--solidtypecolor); 
+    z-index: 1000; 
+    border-radius: 10%;
+}
+
+
+/* Botão de fechar (X) */
+
+.close {
+    color: var(red) ;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
