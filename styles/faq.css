@@ -87,7 +87,7 @@ html a {
 }
 
 .navbar nav ul li {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     position: relative;
 }
 
@@ -213,7 +213,7 @@ h1{
 
     font-size: 5rem;
 
-    padding-block: 4rem;
+    padding-block: 10rem;
 
     text-align: center;
 }
@@ -406,6 +406,29 @@ h4{
     color: var(--solidtypecolor);
 }
 
+footer{
+    display: block;
+    
+    background-color: var(--solidbgcolor);
+    padding-block: 3rem;
+    margin-inline: auto;
+}
+
+footer p{
+    text-align: center;
+    color: var(--rosio);
+}
+
+footer img{
+    display: block;
+    margin-inline: auto;
+    height: 25%;
+    width: 25%;
+}
+
+.dark-mode footer img{
+    filter: saturate(0%);
+}
 
 #backToTop {
     position: fixed;

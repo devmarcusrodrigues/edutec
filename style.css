@@ -87,7 +87,7 @@ html a {
 }
 
 .navbar nav ul li {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     position: relative;
 }
 
@@ -283,7 +283,7 @@ body{
     height: 25rem;
     width: 18.75rem;
     border-radius: 2.188rem;
-    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 8px rgba(209, 209, 209, 0.1);
 }
 
 .cursocard img {
@@ -309,11 +309,18 @@ body{
     font-family: "Righteous", sans-serif;
 }
 
+hr{
+    margin-top: 10rem;
+    width: 75%;
+    display: block;
+    margin-inline: auto;
+    border-radius: 5rem;
+}
+
 .descricaovideo .video {
     background-color: var(--purplebg);
     text-align: center;
-    margin-top: 2rem;
-    padding-top: 2rem;
+    padding-block: 2rem;
 }
 
 .descricaovideo .video a {
@@ -345,6 +352,17 @@ footer{
 footer p{
     text-align: center;
     color: var(--rosio);
+}
+
+footer img{
+    display: block;
+    margin-inline: auto;
+    height: 25%;
+    width: 25%;
+}
+
+.dark-mode footer img{
+    filter: saturate(0%);
 }
 
 /* botão de voltar ao topo */
