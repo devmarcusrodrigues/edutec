@@ -8,7 +8,7 @@
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
     --cortexto: #3d3d3d;
-
+    --bg-desktop: url(../img/pattern-background-desktop-light.svg);
     --landingpng: url(/img/background.png);
     --bggen: url(/img/bggen.png);
     --bgdna: url(/img/bgdna.png);
@@ -22,13 +22,12 @@
     --solidbgcolor: #131114;
     --solidtypecolor: #F6EAF9;
     --cortexto: #F6EAF9;
-
+    --bg-desktop: url(../img/pattern-background-desktop-dark.svg);
     --landingpng: url(/img/background-dark.png);
     --bggen: url(/img/bggen-dark.png);
     --bgdna: url(/img/bgdna-dark.png);
-
-
 }
+
 
 html a {
     text-decoration: none;
@@ -189,6 +188,10 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(20px);
+}
+
+body{
+    background: var(--solidbgcolor);
 }
 
 body.dark-mode {
@@ -533,4 +536,91 @@ img {
 #backToTop:hover {
     opacity: 1;
     background-color: var(--textyellow);
+}
+
+#openPopupBtn {
+    position: fixed;
+    bottom: 20px;  
+    left: 20px;     
+    background-color: var(--rosio);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+    height: 3.5rem;
+    width: 3.5rem;
+    
+}
+
+#openPopupBtn:hover {
+    opacity: 1;
+    background-color: var(--textyellow);
+}
+
+
+/* Estilos para o pop-up (inicialmente escondido) */
+
+#openPopupBtn {
+    position: fixed;
+    bottom: 20px;  
+    left: 20px;   
+    padding: 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--rosio);
+    border: none;
+    border-radius: 100px;
+    z-index: 1000; 
+
+}
+
+/* Estilos para o pop-up (inicialmente escondido) */
+
+
+.popup {
+    display: none; /* O pop-up começa escondido */
+    position: fixed; /* Para que ele fique fixo na tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centralizar corretamente */
+    width: 300px; /* Largura do pop-up */
+
+    height: 450px;
+    background-color: var(--solidbgcolor); 
+    z-index: 1000; 
+    border-radius: 10%;
+    opacity: 1;
+    box-shadow: 0px 10px 5px #00000099;
+}
+
+.popup .btntextcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.popup p{
+    padding-block: 0.25rem;
+    padding-inline: 0.25rem;
+    color: var(--cortexto);
+    font-size: 12px;
+    display: flex;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+/* Botão de fechar (X) */
+
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 12px;
 }

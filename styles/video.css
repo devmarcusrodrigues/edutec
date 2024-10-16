@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
-
 :root {
     --purplebg: #281448;
     --textyellow: #FCB850;
@@ -12,7 +9,7 @@
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
     --cortexto: #3d3d3d;
-
+    --bg-desktop: url(../../img/pattern-background-desktop-light.svg);
     --landingpng: url(/img/background.png);
     --bggen: url(/img/bggen.png);
     --bgdna: url(/img/bgdna.png);
@@ -26,13 +23,14 @@
     --solidbgcolor: #131114;
     --solidtypecolor: #F6EAF9;
     --cortexto: #F6EAF9;
-
+    --bg-desktop: url(../../img/pattern-background-desktop-dark.svg);
     --landingpng: url(/img/background-dark.png);
     --bggen: url(/img/bggen-dark.png);
     --bgdna: url(/img/bgdna-dark.png);
 
 
 }
+
 
 html a {
     text-decoration: none;
@@ -207,7 +205,7 @@ body.dark-mode {
 
 body{
     padding-top: 5rem;
-    background: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-desktop);
     background-repeat: no-repeat;
     background-size: cover;
 }

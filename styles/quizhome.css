@@ -8,7 +8,7 @@
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
     --cortexto: #3d3d3d;
-
+    --bg-desktop: url(../img/pattern-background-desktop-light.svg);
     --landingpng: url(/img/background.png);
     --bggen: url(/img/bggen.png);
     --bgdna: url(/img/bgdna.png);
@@ -22,12 +22,11 @@
     --solidbgcolor: #131114;
     --solidtypecolor: #F6EAF9;
     --cortexto: #F6EAF9;
-
+    --bg-desktop: url(../img/pattern-background-desktop-dark.svg);
     --landingpng: url(/img/background-dark.png);
     --bggen: url(/img/bggen-dark.png);
     --bgdna: url(/img/bgdna-dark.png);
 }
-
 
 html a {
     text-decoration: none;
@@ -190,8 +189,12 @@ input:checked + .slider:before {
     transform: translateX(20px);
 }
 
+body{
+    background: var(--solidbgcolor) var(--bg-desktop);
+}
+
 body.dark-mode {
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor);
 }
 
 section{

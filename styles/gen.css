@@ -375,7 +375,7 @@ body.dark-mode {
 
 .modal-content p {
     margin-bottom: 30px; /* Espaço abaixo do parágrafo */
-    color: var(--cortexto)
+    color: var(--cortexto);
 }
   
 .fechar {
@@ -540,12 +540,25 @@ h4 span{
     left: 0;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(100, 100, 100, 0.1) 10%, transparent 10%) 0 0,
-                radial-gradient(circle, rgba(100, 100, 100, 0.1) 10%, transparent 10%) 2.5rem 2.5rem;
+    background: radial-gradient(circle, rgba(39, 39, 39, 0.2) 10%, transparent 10%) 0 0, radial-gradient(circle, rgba(39, 39, 39, 0.2) 10%, transparent 10%) 2.5rem 2.5rem;
     background-size: 5rem 5rem;
     animation: mover-bolinhas 30s linear infinite;
     opacity: 0.3;
 }
+
+.dark-mode .bolinhas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(100, 100, 100, 0.1) 10%, transparent 10%) 0 0, radial-gradient(circle, rgba(100, 100, 100, 0.1) 10%, transparent 10%) 2.5rem 2.5rem;
+    background-size: 5rem 5rem;
+    animation: mover-bolinhas 30s linear infinite;
+    opacity: 0.3;
+}
+
+
 
 @keyframes mover-bolinhas {
     0% {
@@ -640,4 +653,92 @@ footer img{
 #backToTop:hover {
     opacity: 1;
     background-color: var(--textyellow);
+}
+
+#openPopupBtn {
+    position: fixed;
+    bottom: 20px;  
+    left: 20px;     
+    background-color: var(--rosio);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+    height: 3.5rem;
+    width: 3.5rem;
+    
+}
+
+#openPopupBtn:hover {
+    opacity: 1;
+    background-color: var(--textyellow);
+}
+
+
+/* Estilos para o pop-up (inicialmente escondido) */
+
+#openPopupBtn {
+    position: fixed;
+    bottom: 20px;  
+    left: 20px;   
+    padding: 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--rosio);
+    border: none;
+    border-radius: 100px;
+    z-index: 1000; 
+
+}
+
+/* Estilos para o pop-up (inicialmente escondido) */
+
+
+.popup {
+    display: none; /* O pop-up começa escondido */
+    position: fixed; /* Para que ele fique fixo na tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centralizar corretamente */
+    width: 300px; /* Largura do pop-up */
+
+    height: 450px;
+    background-color: var(--solidbgcolor); 
+    z-index: 1000; 
+    border-radius: 10%;
+    opacity: 1;
+    box-shadow: 0px 10px 5px #00000099;
+}
+
+.popup .btntextcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.popup p{
+    padding-block: 0.25rem;
+    padding-inline: 0.25rem;
+    color: var(--cortexto);
+    font-size: 12px;
+    display: flex;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+
+/* Botão de fechar (X) */
+
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 12px;
 }

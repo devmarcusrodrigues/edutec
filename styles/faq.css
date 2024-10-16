@@ -8,7 +8,7 @@
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
     --cortexto: #3d3d3d;
-
+    --bg-desktop: url(../img/pattern-background-desktop-light.svg);
     --landingpng: url(/img/background.png);
     --bggen: url(/img/bggen.png);
     --bgdna: url(/img/bgdna.png);
@@ -22,11 +22,12 @@
     --solidbgcolor: #131114;
     --solidtypecolor: #F6EAF9;
     --cortexto: #F6EAF9;
-
+    --bg-desktop: url(../img/pattern-background-desktop-dark.svg);
     --landingpng: url(/img/background-dark.png);
     --bggen: url(/img/bggen-dark.png);
     --bgdna: url(/img/bgdna-dark.png);
 }
+
 
 
 html a {
@@ -202,7 +203,7 @@ body.dark-mode {
 
 body{
     padding-top: 5rem;
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-desktop);
 }
 
 h1{
@@ -360,6 +361,7 @@ h3{
     padding-inline: 2rem;
     padding-block: 2.5rem;
     border-radius: 999px;
+    size: cover;
 }
 
 .profile a {
@@ -456,7 +458,7 @@ footer img{
 #openPopupBtn {
     position: fixed;
     bottom: 20px;  
-    left: 1%;     
+    left: 20px;     
     background-color: var(--rosio);
     color: white;
     border: none;
@@ -469,7 +471,14 @@ footer img{
     opacity: 0.9;
     height: 3.5rem;
     width: 3.5rem;
+    
 }
+
+#openPopupBtn:hover {
+    opacity: 1;
+    background-color: var(--textyellow);
+}
+
 
 /* Estilos para o pop-up (inicialmente escondido) */
 
@@ -477,14 +486,14 @@ footer img{
     position: fixed;
     bottom: 20px;  
     left: 20px;   
-    padding: 10px 20px;
+    padding: 1rem;
     font-size: 16px;
     cursor: pointer;
     background-color: var(--rosio);
-    color: var(#000);
     border: none;
     border-radius: 100px;
-    z-index: 10; 
+    z-index: 1000; 
+
 }
 
 /* Estilos para o pop-up (inicialmente escondido) */
@@ -497,22 +506,31 @@ footer img{
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta para centralizar corretamente */
     width: 300px; /* Largura do pop-up */
-    background-color: var(--solidtypecolor); 
+
+    height: 450px;
+    background-color: var(--solidbgcolor); 
     z-index: 1000; 
     border-radius: 10%;
+    opacity: 1;
+    box-shadow: 0px 10px 5px #00000099;
+
+}
+
+.popup p{
+    padding-block: 0.25rem;
+    padding-inline: 0.25rem;
+    color: var(--cortexto);
+    font-size: 12px;
 }
 
 
 /* Botão de fechar (X) */
 
 .close {
-    color: var(red) ;
+    color: red;
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.close:hover {
-    color: #000;
+    margin-right: 12px;
 }
