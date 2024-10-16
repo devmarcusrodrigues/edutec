@@ -8,6 +8,8 @@
     --rosio: #D6008F;
     --solidbgcolor: #EAE8ED;
     --solidtypecolor: #F6EAF9;
+    --bg-desktop: url(../../img/pattern-background-desktop-light.svg);
+    --bg-mobile: url(../../img/pattern-background-mobile-light.svg);
 }
 
 html a {
@@ -138,7 +140,9 @@ html a {
 }
 
 .bosta763{
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 4rem;
     padding-bottom: 3rem;
 }
@@ -202,44 +206,37 @@ html a {
     margin-top: 4rem;
 }
 
-.estrutura_dna{
-    display: inline-block;
+.estrutura_dna {
+    background: var(--purplebg);
     padding: 4rem;
-    background-color: var(--purplebg);
     margin-inline: auto;
-
-    height: 100%;
-    width: 100%;
+    text-align: center; /* Centraliza o texto */
 }
 
-.estrutura_dna h4{
+.estrutura_dna h4 {
     color: var(--rosio);
-
     font-size: 2.5rem;
     padding-block: 2rem;
     font-family: 'Righteous', sans-serif;
-    width: fit-content;
+    margin-bottom: 2rem; /* Adiciona espaço entre o título e o texto */
 }
 
-.estrutura_dna p{
 
+.estrutura_dna p {
     font-weight: 200;
     font-style: normal;
-
     color: #fff;
-    float: left;
-
-    height: fit-content;
-    width: 50%;
-
+    margin-bottom: 2rem; /* Adiciona espaço entre o texto e a imagem */
 }
 
-.estrutura_dna img{
-    float: right;
+.estrutura_dna img {
+    max-width: 100%; /* Ajusta a imagem para não exceder o container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
 }
-
 .funcao{
-    background-color: var(--purplebg);
+    background: var(--purplebg) ;
     padding-bottom: 5rem;
     float: center;
 }
@@ -257,10 +254,15 @@ html a {
     background-color: var(--textyellow);
     border-radius: 1.5rem;
     height: fit-content;
-
+    max-width: 800px;
+    padding: 2rem;
     padding-inline: 2rem;
     padding-block: 2rem;
 
+}
+.funcao h4 span{
+    color: var(--rosio);
+    font-family: 'Righteous', sans-serif;
 }
 
 .funcao p{
@@ -299,7 +301,10 @@ font-size: 1.375rem;
 
 .rep_transc{
     padding: 3rem;
-    background-color: var(--solidbgcolor);
+    background: var(--solidbgcolor) var(--bg-desktop);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .rep_transc h3{

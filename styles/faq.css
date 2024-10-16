@@ -303,6 +303,10 @@ h3{
     text-align: center;
 }
 
+.bug_report a{
+    color: var(--purplebg);
+}
+
 h4{
     color: var(--purplebg);
     font-size: 2rem;

@@ -119,6 +119,12 @@ html a {
     color: #ffffff;
 }
 
+.maincontainer{
+    display: block;
+    margin-inline: auto;
+    max-width: 1366px;
+}
+
 body{
     padding-top: 5rem;
     background: var(--solidbgcolor) var(--bg-desktop);
@@ -177,7 +183,7 @@ iframe{
 }
 
 .desc p{
-    font-family: "Noto Sans Display", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* OOOOO DIFICULDADE P FZR ESSES BOTAO */
@@ -225,11 +231,17 @@ button.anterior {
 }
 
 .top-buttons {
-    position: absolute; /* Permite posicionamento livre */
-    top:  9rem; /* Distância do topo */
-    right: 10.5rem; /* Alinhamento à direita */
+    top:  9rem;
+    right: 10.5rem;
     display: flex;
     gap: 30px;
+    /* align-items: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto; */
+
   }
   
 .btn {
@@ -249,21 +261,67 @@ button.anterior {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px 10px 10px 10px; /* Bordas arredondadas apenas no topo */
+    
 }
 
 /* Botão ativo - quando está selecionado */
 .btn.active {
-    background-color: var(--textyellow); /* Cor amarela para o botão ativo */
+    background-color: var(--textyellow);
     color: white;
 }
 
-/* Efeito de hover para botões inativos */
+
 .btn:hover {
     opacity: 0.8;
 }
   
 .btn:hover {
-    opacity: 0.9; /* Efeito de hover */
-    transform: scale(1.02); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    opacity: 0.9; 
+    transform: scale(1.02); 
   }
   
+.lista details {
+    font-size: x-large;
+    color: var(--purplebg);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    padding-block: 0.75rem;
+    padding-inline: 0.25rem;
+    margin-block: 0.75rem;
+    gap: 2rem0;
+}
+
+.lista details[open] {
+    background-color: var(--rosio);
+}
+
+.lista details summary {
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.lista details[open] summary {
+    color: var(--solidtypecolor);;
+}
+
+.lista details button {
+    color: var(--solidtypecolor);
+    background-color: var(--purplebg);
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.25rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    margin-bottom: 6px; /* Adiciona espaço entre os botões */
+}
+
+.lista details[open] button {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -41,7 +41,7 @@ const videos = [
         descricao: "Descubra tudo sobre a estrutura do DNA, incluindo sua organização e composição.",
         src: "https://www.youtube.com/embed/lGG1fJCN-Gg?si=wg_Sg8gDyj8yDi9O"
     },
-]
+];
 
 let videoIndex = 0;
 
