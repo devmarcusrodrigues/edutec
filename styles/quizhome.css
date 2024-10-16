@@ -190,11 +190,17 @@ input:checked + .slider:before {
 }
 
 body{
-    background: var(--solidbgcolor) var(--bg-desktop);
+    background-color: var(--solidbgcolor);
+    background-image: url('../img/pattern-background-desktop-light.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 body.dark-mode {
-    background: var(--solidbgcolor);
+    background-color: var(--solidbgcolor);
+    background-image: url('../img/pattern-background-desktop-dark.svg');
+
 }
 
 section{
