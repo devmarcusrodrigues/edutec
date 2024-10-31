@@ -101,6 +101,11 @@
     width: 2rem;
 }
 
+.login{
+    height: 2rem;
+    width: 2rem;
+}
+
 .navbar nav ul a:hover {
     color: #ffffff;
 }
