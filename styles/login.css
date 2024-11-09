@@ -110,7 +110,7 @@
 .navbar nav ul a {
     color: white;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
     font-family: 'Poppins', sans-serif;
@@ -201,6 +201,13 @@ body{
     max-width: 1366px;
 }
 
+.background{
+    padding: 25rem;
+    background-image: url(../img/loginbg.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
 .background img{
     size: cover;
 }
@@ -214,14 +221,97 @@ body{
 
 .login-section div{
     background: var(--solidbgcolor);
+    border-radius: 18px;
 }
 
 .inputs{
+    display: block;
     align-content: center;
     margin: 2rem;
     padding: 2rem;
 }
 
 .inputs h1{
-    margin-inline: auto;
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+
+    padding: 2rem;
+    font-size: 36px;
+    color: var(--cadastrocolor);
+
+}
+
+.inputs input{
+    padding: 0.75rem;
+    padding-left: 2rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.dark-mode .inputs input {
+    background-color: #3d3d3d;
+    color: var(--cortexto);
+}
+
+.inputs #email{
+    background-image: url(../img/account_circle.png);
+    background-repeat: no-repeat;
+    background-position: calc(0% + 5px) center;
+}
+
+.inputs #senha{
+    background-image: url(../img/lock.png);
+    background-repeat: no-repeat;
+    background-position: calc(0% + 5px) center;
+
+}
+
+.inputs #senhaconfirmar{
+    background-image: url(../img/lock.png);
+    background-repeat: no-repeat;
+    background-position: calc(0% + 5px) center;
+}
+
+.inputs #nome{
+    background-image: url(../img/id_card.png);
+    background-repeat: no-repeat;
+    background-position: calc(0% + 5px) center;
+}
+
+input::placeholder{
+    margin-left: 25px;
+    font-style: italic;
+}
+
+.inputs div{
+    display: flex;
+    justify-content: center;
+}
+
+.login-button{
+    margin: 2rem;
+    padding-block: 0.5rem;
+    padding-inline: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--textyellow);
+    color: white;
+
+    font-family: 'Righteous', sans-serif;
+    font-size: 24px;
+}
+
+p{
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+a{
+    font-style: normal;
+    font-weight: 600;
+    color: var(--textyellow);
+    text-decoration: none;
+    
 }
