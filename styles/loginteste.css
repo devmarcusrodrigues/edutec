@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center; /* Centraliza o main no centro da tela */
+    align-items: center;
+    min-height: 100vh; /* Garante que o conteúdo ocupe a altura total da tela */
+    margin: 0;
+    background-color: var(--solidbgcolor); /* Define uma cor de fundo */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima do main */
+    margin: 0 auto; /* Centraliza o main horizontalmente */
+}
+
+.maincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.background {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background-image: url(../img/loginbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Define um limite para a largura da seção de login */
+    padding: 2rem;
+    background: var(--purplebg);
+    border-radius: 18px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputs input {
+    width: 100%;
+    max-width: 300px; /* Limite de largura para input */
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.login-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Righteous', sans-serif;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--textyellow);
+    color: white;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    color: white;
+}

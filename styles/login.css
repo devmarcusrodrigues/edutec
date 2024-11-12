@@ -197,19 +197,35 @@ body.dark-mode {
 }
 
 body{
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--purplebg);
+}
+
+main{
+    
+}
+
+.maincontainer{
     display: inline-flex;
-    max-width: 1366px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
 
 .background{
-    padding: 25rem;
+    /* padding: 24rem;
     background-image: url(../img/loginbg.png);
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: repeat; */
 }
 
 .background img{
     size: cover;
+
 }
 
 .login-section{
@@ -220,20 +236,25 @@ body{
 }
 
 .login-section div{
+    margin-inline: 2rem;
     background: var(--solidbgcolor);
     border-radius: 18px;
 }
 
 .inputs{
-    display: block;
-    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
     margin: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .inputs h1{
     font-family: 'Righteous', sans-serif;
     text-align: center;
+    justify-content: center;
 
     padding: 2rem;
     font-size: 36px;
@@ -242,6 +263,7 @@ body{
 }
 
 .inputs input{
+    justify-content: center;
     padding: 0.75rem;
     padding-left: 2rem;
     margin: 1rem;

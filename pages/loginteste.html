@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/loginteste.css">
 
     <script src="../scripts/tema.js" defer></script>
-    <title>Genesync - Cadastro</title> 
+    <title>Genesync - Login</title> 
 </head>
 <body>
     <section class="navbar">
@@ -43,31 +43,33 @@
         </nav>
     </section>
     
-    <div class="background">
-        <img src="/img/loginbg.png" alt="">
-
-    </div>
-    <section class="login-section">
-        <div>
-            <div class="inputs">
-                <h1 class="principal">
-                    Cadastro
-                </h1>
-                <input type="text" name="nome" id="nome" placeholder="Nome">
-                <input type="text" name="email" id="email" placeholder="E-mail">
-                <input type="password" name="senha" id="senha" placeholder="Senha">
-                <input type="password" name="senhaconfirmar" id="senhaconfirmar" placeholder="Confirmar Senha">
-                <div>
-                    <button class="login-button">
-                        Acessar
-                    </button>
-                </div>
+    <main>
+        <div class="maincontainer">
+            <div class="background">
+                <!-- <img src="/img/loginbg.png" alt=""> -->
+        
             </div>
+            <section class="login-section">
+                <div>
+                    <div class="inputs">
+                        <h1 class="principal">
+                            Login
+                        </h1>
+                        <input type="text" id="email" placeholder="E-mail">
+                        <input type="password" id="senha" placeholder="Senha">
+                        <div>
+                            <button class="login-button">
+                                Acessar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <p>
+                    Novo aqui? <a href="./cadastro.html">Inscreva-se!</a>
+                </p>
+            </section>
         </div>
-
-        <p>
-            Já tem acesso? <a href="./login.html">Entrar</a>
-        </p>
-    </section>
+    </main>
 </body>
 </html>
