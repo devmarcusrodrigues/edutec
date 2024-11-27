@@ -7,21 +7,16 @@
     <link rel="stylesheet" href="../styles/login.css">
 
     <script src="../scripts/tema.js" defer></script>
+    
     <title>Genesync - Login</title> 
 </head>
 <body>
     <section class="navbar">
         <nav>
             <div class="logo">
-                <a href="/index.html"><img src="/img/LOGO.png" alt="Logo do projeto"></a>
+                <a href="/pages/login.html"><img src="/img/LOGO.png" alt="Logo do projeto"></a>
             </div>
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/genetica.html">Genética</a></li>
-                <li><a href="/pages/dna.html">DNA</a></li>
-                <li><a href="/pages/videos/video1.html">Videoaulas</a></li>
-                <li><a href="/pages/quiz.html">Jogo</a></li>
-                <li><a href="/pages/faq.html">FAQ</a></li>
                 <li>
                     <div class="temacontainer">
                         <label class="switch">
@@ -32,11 +27,13 @@
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div id="linkcontainer">
                         <img class="login" src="../../img/account_circle.svg" alt="Login">
-                        <a href="/pages/login.html">
-                            Faça Login
-                        </a>
+                        <div>
+                            <a href="/pages/login.html" class="loginlink">
+                                Faça Login
+                            </a>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -46,7 +43,7 @@
     <main>
         <div class="maincontainer">
             <div class="background">
-                <img src="/img/loginbg.png" alt="">
+                <!-- <img src="/img/loginbg.png" alt=""> -->
         
             </div>
             <section class="login-section">

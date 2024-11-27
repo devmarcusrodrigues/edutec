@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/login.css">
-
+    <script src="../scripts/cadastro.js" defer></script>
     <script src="../scripts/tema.js" defer></script>
     <title>Genesync - Cadastro</title> 
 </head>
@@ -13,16 +13,9 @@
     <section class="navbar">
         <nav>
             <div class="logo">
-                <a href="/index.html"><img src="/img/LOGO.png" alt="Logo do projeto"></a>
+                <a href="/pages/cadastro.html"><img src="/img/LOGO.png" alt="Logo do projeto"></a>
             </div>
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/genetica.html">Genética</a></li>
-                <li><a href="/pages/dna.html">DNA</a></li>
-                <li><a href="/pages/videos/video1.html">Videoaulas</a></li>
-                <li><a href="/pages/quiz.html">Jogo</a></li>
-                <li><a href="/pages/faq.html">FAQ</a></li>
-                <li>
                     <div class="temacontainer">
                         <label class="switch">
                             <input type="checkbox" id="theme-toggle">
@@ -32,11 +25,13 @@
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div id="linkcontainer">
                         <img class="login" src="../../img/account_circle.svg" alt="Login">
-                        <a href="/pages/login.html">
-                            Faça Login
-                        </a>
+                        <div>
+                            <a href="/pages/login.html" class="loginlink">
+                                Faça Login
+                            </a>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -44,12 +39,12 @@
     </section>
     
     <div class="background">
-        <img src="/img/loginbg.png" alt="">
+        <!-- <img src="/img/loginbg.png" alt=""> -->
 
     </div>
     <section class="login-section">
         <div>
-            <div class="inputs">
+            <form class="inputs">
                 <h1 class="principal">
                     Cadastro
                 </h1>
@@ -57,12 +52,10 @@
                 <input type="text" name="email" id="email" placeholder="E-mail">
                 <input type="password" name="senha" id="senha" placeholder="Senha">
                 <input type="password" name="senhaconfirmar" id="senhaconfirmar" placeholder="Confirmar Senha">
-                <div>
-                    <button class="login-button">
-                        Acessar
-                    </button>
-                </div>
-            </div>
+                <button class="login-button">
+                    Acessar
+                </button>
+            </form>
         </div>
 
         <p>

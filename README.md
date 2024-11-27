@@ -15,12 +15,5 @@
 
 #### Mudanças
 
-<<<<<<< HEAD
 - Tamanho das logo: de 2.5rem para 5rem
 - faq
-=======
-- Tamanho das logo: de 2.5rem para 4rem
-- fac 
-- link insta
-- box-shadow nos cards
->>>>>>> c949f897cc2ec4032028ad5329c334f2e0693a3c
