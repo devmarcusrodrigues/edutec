@@ -1,10 +1,10 @@
 {
   "name": "edutec",
   "version": "1.0.0",
-  "description": "## A fazer:",
-  "main": "pop.js",
+  "description": "Pacote de dependências do trabalho Edutec, GeneSync",
+  "main": "",
   "scripts": {
-    "start": "nodemon server.js localhost 3000"
+    "start": "nodemon --env-file=.env server.js localhost 3000"
   },
   "keywords": [],
   "author": "",
