@@ -12,6 +12,14 @@ async function login() {
         password
     }
 
+    // const response = await fetch("https://projeto-genesync-backend.vercel.app/login", {
+    //     method: "POST",
+    //     headers: {
+    //         "Content-Type": "application/json"
+    //     },
+    //     body: JSON.stringify({ user })
+    // }).then(response => response.json())
+
     const response = await fetch("https://projeto-genesync-backend.vercel.app/login", {
         method: "POST",
         headers: {
@@ -21,8 +29,9 @@ async function login() {
     }).then(response => response.json())
 
     if(response.ok) {
-        console.log(response.token)
+        console.log(response)
         localStorage.setItem("token", response.token)
+        localStorage.setItem("id", response.id)
         window.location.href = "../index.html"
         return
     }

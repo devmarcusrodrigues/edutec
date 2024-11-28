@@ -7,3 +7,4 @@ const url = "./login.html"
 verifyToken(url)
 
 getName()
+logout()

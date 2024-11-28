@@ -3,6 +3,62 @@ import { verifyToken } from "./verify.js";
 const url = "../login.html"
 
 verifyToken(url)
+//área complicada
+
+let seconds = 0;
+let interval;
+
+function startTimer() {
+    interval = setInterval(() => {
+        seconds++;
+        updateTimerDisplay();
+    }, 1000); // Atualiza a cada 10ms para medir centésimos
+}
+
+function stopTimer() {
+    
+    clearInterval(interval);
+    
+
+}
+
+async function resetTimer() {
+    const save = `${seconds}`
+    console.log(save)
+
+    const id = localStorage.getItem("id")
+    const response = await fetch("https://projeto-genesync-backend.vercel.app/time", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({id, save})
+
+    })
+
+    clearInterval(interval);
+    seconds = 0;
+    updateTimerDisplay();
+    return save
+}
+
+function updateTimerDisplay() {
+    const timerDisplay = document.getElementById("timer");
+    timerDisplay.textContent = `${String(seconds).padStart(2, '0')}`;
+}
+
+// async function saveTime(save){
+//     const id = localStorage.getItem("id")
+
+//     const response = await fetch("http://localhost:3000/time", {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify({id})
+
+//     })
+// }
 
 const palavras = ['cromossomo', 'genomica', 'mendel', 'alelos', 'genes', 'genetica', 'molecular', 'populacional'];
 let palavraEscolhida = '';
@@ -47,6 +103,7 @@ function iniciarJogo() {
     erros = 0;
     contadorErros.textContent = erros;
     mensagem.textContent = '';
+    startTimer();
     atualizarPalavra();
     criarBotoesLetras();
 }
@@ -61,7 +118,11 @@ function atualizarPalavra() {
 
     if (!palavraDisplay.includes('_')) {
         exibirPopup('Você venceu!');
+        stopTimer();
+        
         desabilitarBotoesLetras();
+        resetTimer();
+
     }
 }
 
@@ -84,12 +145,14 @@ function verificarLetra(letra, botao) {
     if (palavraEscolhida.includes(letra)) {
         letrasAdivinhadas.push(letra);
         atualizarPalavra();
+        
     } else {
         erros++;
         contadorErros.textContent = erros;
         letrasErradas.push(letra);
         if (erros === maxErros) {
             exibirPopup(`Você perdeu! A palavra era: "${palavraEscolhida}"`);
+            stopTimer();
             desabilitarBotoesLetras();
         }
     }
