@@ -1,10 +1,8 @@
-
-
-async function login(){
+async function login() {
     const email = document.querySelector("#email").value
-    const password = document.querySelector("#senha").value
+    const password = document.querySelector("#password").value
 
-    if (email === "" || password === ""){
+    if(email === "" || password === "") {
         alert("Preencha todos os campos!")
         return
     }
@@ -19,14 +17,14 @@ async function login(){
         headers: {
             "Content-Type": "application/json"
         },
-
-        body: JSON.stringify({user})
+        body: JSON.stringify({ user })
     }).then(response => response.json())
 
-    if (response.ok){
+    if(response.ok) {
         console.log(response.token)
         localStorage.setItem("token", response.token)
         window.location.href = "../index.html"
+        return
     }
 
     alert(response.message)
@@ -34,7 +32,7 @@ async function login(){
 }
 
 const button = document.querySelector("#login-selector")
-button.addEventListener("click", (event) =>{
+button.addEventListener("click", (event) => {
     event.preventDefault()
     login()
 })
