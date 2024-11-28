@@ -1,6 +1,6 @@
 async function login() {
     const email = document.querySelector("#email").value
-    const password = document.querySelector("#password").value
+    const password = document.querySelector("#senha").value
 
     if(email === "" || password === "") {
         alert("Preencha todos os campos!")
