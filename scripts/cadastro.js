@@ -22,7 +22,7 @@
         password
     }
 
-    await fetch("http://localhost:3000/register", {
+    const response = await fetch("http://localhost:3000/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -30,11 +30,21 @@
         body: JSON.stringify({
             user
         })
-    })
+    }).then(response => response.json());
+
+    alert(response.message)
+
+    if (response.userExists){
+        window.location.reload()
+        return
+    }
+
+    window.location.href("../pages/login.html")
 }
 
 const button = document.querySelector(".login-button")
 button.addEventListener("click", (event) => {
     event.preventDefault();
     register();
+    
 })

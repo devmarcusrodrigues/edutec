@@ -110,13 +110,33 @@ html a {
     filter: blur(12px);
 }
 
-.navbar nav ul a {
+.navbar nav ul a, .navbar nav ul p{
     color: white;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
     font-family: 'Poppins', sans-serif;
+}
+
+.navbar nav ul li .userinfo{
+    display: inline-block;
+}
+
+.dark-mode .navbar nav ul li .userinfo{
+    display: inline-block;
+
+}
+
+.logout{
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background: none;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    cursor: pointer;
 }
 
 .tema{

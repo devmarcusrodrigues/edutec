@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/video.css">
     <script src="../../scripts/tema.js" defer></script>
-    <script src="../../scripts/videosimple.js" defer></script>
-    <script src="./verify_video.js"></script>
+    <script src="../../scripts/videosimple.js" type="module" defer></script>
     <link rel="shortcut icon" href="../../icon.png" type="image/x-icon">
     <title>GeneSync</title>
 </head>
@@ -34,6 +33,17 @@
                             </label>
                             <img class="tema" src="../../img/dark-mode.svg" alt="Tema">
                         </div>
+                    </li>
+                    <li>
+                        <div id="userinfo">
+                            <img class="usericon" src="../../img/account_circle.svg" alt="Login">
+                            <div>
+                                <p class="username"></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="logout">Sair</button>
                     </li>
                 </ul>
             </nav>

@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="style.css">
      <script src="./scripts/tema.js" defer></script>
      <script src="./scripts/botaotopo.js" defer></script>
-     <script src="./scripts/script.js" defer></script>
+     <script src="./script.js" type="module" defer></script>
     <title>GeneSync</title>
 </head>
 <body>
@@ -35,12 +35,15 @@
                         </div>
                     </li>
                     <li>
-                        <div>
-                            <img class="login" src="../../img/account_circle.svg" alt="Login">
-                            <a href="/pages/login.html">
-                                Faça Login
-                            </a>
+                        <div id="userinfo">
+                            <img class="usericon" src="../../img/account_circle.svg" alt="Login">
+                            <div>
+                                <p class="username"></p>
+                            </div>
                         </div>
+                    </li>
+                    <li>
+                        <button class="logout">Sair</button>
                     </li>
                 </ul>
             </nav>

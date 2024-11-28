@@ -1,3 +1,9 @@
+import { verifyToken } from "./verify.js";
+
+const url = "../login.html"
+
+verifyToken(url)
+
 const palavras = ['adenina', 'citosina', 'guanina', 'timina', 'helice', 'ribossomo', 'replicacao', 'transcricao'];
 let palavraEscolhida = '';
 let letrasAdivinhadas = [];

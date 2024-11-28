@@ -107,7 +107,7 @@
     filter: blur(12px);
 }
 
-.navbar nav ul a {
+.navbar nav ul a, p{
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -116,21 +116,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar nav ul li .linkcontainer{
+.navbar nav ul li .userinfo{
     display: inline-block;
 }
 
-.dark-mode .navbar nav ul li .linkcontainer{
+.dark-mode .navbar nav ul li .userinfo{
     display: inline-block;
 
-}
-
-.navbar.dark-mode nav ul li div .loginlink{
-    margin-bottom: 10rem;
-}
-
-.navbar nav ul li div .loginlink{
-    margin-bottom: 10rem;
 }
 
 .tema{
